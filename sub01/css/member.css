@@ -1,0 +1,50 @@
+﻿*{margin: 0; padding: 0; border: 0; font-family: 'Malgun Gothic', sans-serif;}
+
+ul, li{list-style: none;}
+a{text-decoration: none; display: block; color: #555555;}
+.cf:after{content: ''; display: block; clear: both;}
+.fl{float: left;}
+
+#wrap{width: 100%; margin: 0 auto;}
+#wrap_inner{width: 411px; height: 1500px; margin: 0 auto; background: #ff0000;}
+ header, section, footer{width: 100%;} 
+
+/* 로고 부분 */
+#header{width: 411px; margin: 0 auto; height: 80px;}
+#header h1{width: 180px;}
+#header img{width: 80px;  margin-top: 30px;}
+
+/* 로그인 부분 */
+#member{width: 411px; margin: 0 auto;}
+#member>h2{width: 100%; height: 50px; text-align: center; margin-top: 50px;}
+#member form>input{width: 100%; height: 50px; border-radius: 60px; box-shadow: 2px 3px 7px #cccccc; margin-top: 20px; padding-left: 20px; box-sizing: border-box;}
+#member .gender{width: 49%; height: 50px; border-radius: 60px; box-shadow: 2px 3px 7px #cccccc; margin-top: 15px; padding-left: 20px; box-sizing: border-box; float: right; font-size: 15px; color: #a4a4a4;}
+#member .year{width: 35%; height: 50px; border-radius: 60px; box-shadow: 2px 3px 7px #cccccc; margin-top: 15px; padding-left: 20px; box-sizing: border-box; font-size: 15px; color: #a4a4a4;}
+#member .month{width: 30%; height: 50px; border-radius: 60px; box-shadow: 2px 3px 7px #cccccc; margin-top: 15px; padding-left: 20px; box-sizing: border-box;  font-size: 15px; color: #a4a4a4; margin-left: 11px;}
+#member .day{width: 30%; height: 50px; border-radius: 60px; box-shadow: 2px 3px 7px #cccccc; margin-top: 15px; padding-left: 20px; box-sizing: border-box;  font-size: 15px; color: #a4a4a4; float: right;}
+#member .gender option:nth-child(1){display: none;}
+#member .year option:nth-child(1){display: none;}
+#member .month option:nth-child(1){display: none;}
+#member .day option:nth-child(1){display: none;}
+#member form>input::placeholder{font-size: 15px; color: #555555;}
+#member form>input:nth-child(4){margin-top: 15px; width: 49%; float: left;}
+#member form button{width: 100%; height: 60px; margin-top: 35px; font-size: 22px; color: #ffffff; background-color: #00c0c0; border-radius: 60px; font-weight: bold;}
+#member form span.option{margin-top: 20px; font-size: 13px;}
+#member form span.option input{margin: 30px 15px 0 0; }
+#member .sign{width: 100%; margin-top: 30px; font-size: 13px; color: #d1d1d1; font-weight: bold;}
+#member .sign .signup{float: left;}
+#member .sign .find{float: right;}
+
+.gray_line{width: 100%; height: 30px; border-bottom: 1px solid #cccccc;}
+.puple{color: #7B4CE0; text-decoration: underline;}
+.bottom_text{width: 100%; text-align: center; color: #7B4CE0; text-decoration: underline; margin-top: 25px; font-size: 13px;}
+.bottom_text a{color: #7B4CE0;}
+
+
+/* 하단 로그인 부분 */
+footer{width: 100%; height: 100px;}
+.f_login{width: 411px; margin: 60px auto;}
+.f_login a{margin-right: 80px; float: left;}
+.f_login a:nth-child(4){margin-right: 0px;}
+.f_login a img{width: 40px;}
+
