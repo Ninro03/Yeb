@@ -1,0 +1,33 @@
+﻿body{width: 100%; height: auto; margin: 0 auto; background: url(../img/main.png) top center no-repeat;}
+.hidden{display: none;}
+#wrap{margin: 0 auto;}
+header{width: 411px; height: 50px; margin: 25px auto 0;}
+section{width: 411px; height: 930px; margin: 0 auto;}
+footer{width: 411px; height: 195px; margin: 0 auto;}
+
+/* header */
+#h_menu{width: 50px; height: 50px; padding-top: 10px; cursor: pointer; box-sizing: border-box;}
+#h_menu span{display: block; width: 25px; height: 2px; background: #333333; margin: 6px auto;}
+.map_btn{width: 50px; height: 50px; background: url(../img/map_icon.png) no-repeat center center;}
+
+/* section */
+#section .content1{width: 100%; height: 240px; overflow: hidden;}
+#section .content1 h2{font-size: 17px; letter-spacing: 1px; margin-top: 27px; margin-left: 18px;}
+#section .content1 h2 .arrow{width: 25px; height: 25px; margin-right: 11px; float: right;}
+#section .content1 h2 .arrow img{height: 25px;}
+#section .content1 ul{width: 200%; height: 175px; padding: 5px; box-sizing: border-box; position: relative;}
+#section .content1 ul li{width: 150px; height: 150px; padding: 5px 8px; float: left;}
+#section .content1 ul li a{width: 150px; height: 150px; position: absolute;}
+
+#section .content1 ul li a img{width: 150px; height: 150px; border-radius: 10px;}
+#section .content1 ul li a span{position: absolute;}
+#section .content1 ul li a .area{width: 25px; height: 17px; bottom: 23px; left: 8px; color: #ffffff; font-size: 11px; background: #7b4ce0; text-align: center; border-radius: 4px;}
+#section .content1 ul li a .place{bottom: 6px; left: 8px; font-size: 12px; font-weight: bold;}
+
+#section .content2{width: 100%; height: 71px;}
+#section .content3{width: 100%; height: 290px;}
+#section .content4{width: 100%; height: 300px;}
+#section .content4 h3{font-size: 17px; letter-spacing: 1px; margin-top: 27px; margin-left: 18px;}
+#section .content4 h3 .arrow{width: 25px; height: 25px; margin-right: 11px; float: right;}
+#section .content4 h3 .arrow img{height: 25px;}
+
