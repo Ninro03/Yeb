@@ -1,15 +1,4 @@
-﻿body{width: 100%; margin: 0 auto;}
-#wrap{width: 411px; height: 731px; margin: 0 auto 25px;}
-header{position: relative; width: 411px; height: 50px; margin: 0 auto;}
-section{position: relative; width: 411px; margin: 0 auto; overflow: hidden;}
-footer{position: fixed; bottom: 0; width:411px; margin: 0 auto;}
-
-/*------------------------- header -------------------------*/
-#h_menu{width: 50px; height: 50px; padding-top: 10px; cursor: pointer; box-sizing: border-box;}
-#h_menu span{display: block; width: 25px; height: 2px; background: #333333; margin: 6px auto;}
-.map_btn{width: 50px; height: 50px; background: url(../img/map_icon.png) no-repeat center center;}
-
-/*------------------------- section -------------------------*/
+﻿/*------------------------- section -------------------------*/
 #tab_menu{width: 100%; height: 47px; line-height: 45px; text-align: center; box-sizing: border-box;}
 #tab_menu ul li{width: 50%; height: 47px; float: left; border-bottom: 1px solid #999999; box-sizing: border-box;}
 #tab_menu ul li a{width: 100%; height: 100%; font-size: 1.1em; color: #333333;}
@@ -41,16 +30,3 @@ footer{position: fixed; bottom: 0; width:411px; margin: 0 auto;}
 #tab_con #chatting .con_list ul li span.list_stit span{display: block; width: auto; float: left; font-size: 0.72em; margin-right: 9px;}
 #tab_con #chatting .con_list ul li button{position: absolute; top: 28%; right: 4.8%; width: 60px; height: 26px; line-height:26px; color: #333333; border-radius: 3px; background: #FFE401; font-size: 0.77em; font-weight: bold;}
 
-/*------------------------- footer -------------------------*/
-#f_menu{width: 100%; height: 60px; border-top: 1px solid #dddddd; background: #ffffff;}
-#f_menu ul{width: 100%; height: 100%;}
-#f_menu ul li{float: left; width: 25%; height: 100%; text-align: center;}
-#f_menu ul li a{height: 100%; padding-top: 34px; font-size: 0.9em;  box-sizing: border-box;}
-#f_menu ul li:nth-child(1) a{background: url(../img/home.png) center 5px no-repeat;}
-#f_menu ul li:nth-child(2) a{background: url(../img/calendar.png ) center 5px no-repeat;}
-#f_menu ul li:nth-child(3) a{background: url(../img/cummunity.png) center 5px no-repeat;}
-#f_menu ul li:nth-child(4) a{background: url(../img/user.png) center 5px no-repeat;}
-#f_menu ul li.on:nth-child(1) a{background: url(../img/home_on.png) center 5px no-repeat; color: #00C0C0;}
-#f_menu ul li.on:nth-child(2) a{background: url(../img/calendar_on.png ) center 5px no-repeat; color: #00C0C0;}
-#f_menu ul li.on:nth-child(3) a{background: url(../img/cummunity_on.png) center 5px no-repeat; color: #00C0C0;}
-#f_menu ul li.on:nth-child(4) a{background: url(../img/user_on.png) center 5px no-repeat; color: #00C0C0;}
