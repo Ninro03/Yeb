@@ -13,6 +13,7 @@
 		s_content.eq(i).css('display','block');
 	});
 	
+	/* content2 롤링 */
 	var current = 0;
 	var lolling = $('.lolling>li');
 	var stop;
@@ -42,18 +43,24 @@
 		}
 	);
 	
+	/* content4 이미지 스크롤 */
 	var current2 = 0;
 	var schedule_slide = $('.schedule_slide>li');
 	var stop2;
 	var button = $('.button_list>li');
+	var length = schedule_slide.size();
+	
+	$("<p>&nbsp;/ "+length+"</p>").appendTo(button);
 	
 	function timer2(){
 		stop2=setInterval(function(){
 			var prev = schedule_slide.eq(current2);
 			move2(prev,'0%','-100%');
+			button.find('.color').prepend().html(current2+1);
 			current2++;
-			if(current2==lolling.size()){current2=0};
+			if(current2==schedule_slide.size()){current2=0};
 			var next = schedule_slide.eq(current2);
+			button.find('span').prepend().html(current2+1);
 			move2(next,'100%','0%');
 		},3000);
 	};
@@ -62,20 +69,14 @@
 	};
 	timer2();
 	
-/* 	button.on({
-		click:function(){
-			var tg = $(this);
-			var i = tg.index();
-			button.removeClass('on');
-			tg.addClass('on');
-			move1(i);
-		}
+
+	$('#h_menu').click(function(){
+		$('#sidebar').fadeIn(500);
+		$('.sidebar_inner').stop(true,true).animate({'margin-left':'-206px'},500);
 	});
-	
-	function move1(i){
-		if(current2==i) return;
-		var currentEl = schedule_slide.eq(current);
-		var nextEl = schedule_slide.eq(i);
-		current2=i;
-	};	 */
+	var sidebar_a = $('#sidebar a');
+	$('#sidebar').click(function(){
+		$('#sidebar').fadeOut(500);
+		$('.sidebar_inner').stop(false,false).animate({'margin-left':'-457px'},500);
+	});
 });
