@@ -18,7 +18,7 @@ footer{width: 411px; height: 230px; margin: 0 auto;}
 #section .content1 h2 .arrow{width: 25px; height: 25px; margin-right: 11px; float: right;}
 #section .content1 h2 .arrow img{height: 25px;}
 #section .content1 ul{width: 200%; height: 175px; padding: 5px; box-sizing: border-box; position: relative;}
-#section .content1 ul li{width: 150px; height: 150px; padding: 5px 8px; float: left;}
+#section .content1 ul li{width: 150px; height: 150px; padding: 5px 0px; float: left;}
 #section .content1 ul li a{width: 150px; height: 150px; position: absolute;}
 
 #section .content1 ul li a img{width: 150px; height: 150px; border-radius: 10px; box-shadow: 3px 3px 1px #ddd;}

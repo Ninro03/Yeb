@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7w1cs2xdu7&amp;submodules=panorama,geocoder,drawing,visualization"></script>	
+	<title>maps</title>
+</head>
+<body>
+<div id="map" style="position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;"></div>
+<script>
+var HOME_PATH = window.HOME_PATH || '.';
+var position = new naver.maps.LatLng(37.399582, 126.938919);
+
+var map = new naver.maps.Map('map', {
+    center: position,
+    zoom: 17  // 수치가 크면 확대
+});
+
+var defaultMarker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.399582, 126.938919),
+    map: map,
+    icon: {
+        content: '<img src="'+ HOME_PATH +'/images/mark.png" alt="" ' +
+                 'style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; ' +
+                 '-webkit-user-select: none; position: absolute; width: 34px; height: 34px; left: 0px; top: 0px;">',
+        size: new naver.maps.Size(34, 34),
+		origin: new naver.maps.Point(0, 0),
+        anchor: new naver.maps.Point(17, 17)
+    }
+});
+
+
+
+defaultMarker.setTitle('그린컴퓨터 안양지점');
+defaultMarker.setDraggable(true);
+</script>	
+</body>
+</html>
