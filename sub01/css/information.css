@@ -28,7 +28,7 @@
 						<form action="">
 							<div class="reset_button">
 								<input id="reset_img" type="image" src="img/reset_button.png" alt="리셋버튼">
-
+								<input id="reset" type="reset" alt="제출버튼">
 							</div>
 							<div class="pop_tit">종류</div>
 							<input type="checkbox" id="cb1"/>
@@ -68,8 +68,8 @@
 							<div class="button">
 								<input type="submit" value="닫기"/ id="close">
 								<label for="close">닫기</label>
-								<input type="submit" value="설정하기" id="submit"/>
-								<label for="submit">설정하기</label>
+								<input type="submit" value="제출하기" id="submit"/>
+								<label for="submit">제출하기</label>
 							</div>
 						</form>
 				
