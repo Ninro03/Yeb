@@ -5,10 +5,41 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7w1cs2xdu7&amp;submodules=panorama,geocoder,drawing,visualization"></script>	
 	<title>maps</title>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<link rel="stylesheet" href="css/map.css"/>
 </head>
 <body>
-<div id="map" style="position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;"></div>
-<script>
+<div id="map">
+	<div class="h_menu">
+		<div class="search_box">
+			<input type="text" class="search" value="장소 주소 검색"/>
+			<button class="search_icon"></button>
+		</div>
+ 		<div class="time_box">
+			<button class="time_icon"></button>
+		</div>
+		<div class="filter_box">
+			<button class="filter_icon"></button>
+		</div>	 
+	</div>
+	<div class="gps_box">
+		<button class="gps_icon"></button>
+	</div>
+	<div class="list_box">
+		<button class="list_icon cf">
+			<div class="line_box">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+			<p>목록보기</p>
+		</button>
+	</div>
+	<div class="f_box">
+		<button class="f_icon"><p>현재 지도 중심</p></button>
+	</div>
+</div>
+<!-- <script>
 var HOME_PATH = window.HOME_PATH || '.';
 var position = new naver.maps.LatLng(37.399582, 126.938919);
 
@@ -21,7 +52,7 @@ var defaultMarker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.399582, 126.938919),
     map: map,
     icon: {
-        content: '<img src="'+ HOME_PATH +'/images/mark.png" alt="" ' +
+        content: '<img src="'+ HOME_PATH +'/img/mark.png" alt="" ' +
                  'style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; ' +
                  '-webkit-user-select: none; position: absolute; width: 34px; height: 34px; left: 0px; top: 0px;">',
         size: new naver.maps.Size(34, 34),
@@ -34,6 +65,6 @@ var defaultMarker = new naver.maps.Marker({
 
 defaultMarker.setTitle('그린컴퓨터 안양지점');
 defaultMarker.setDraggable(true);
-</script>	
+</script>	 -->
 </body>
 </html>
