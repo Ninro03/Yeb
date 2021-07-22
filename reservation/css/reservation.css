@@ -7,7 +7,6 @@
 .slide .slide_control span{display: block; float: left; width: 12px; height: 12px; border-radius: 15px; background: rgba(230,230,230,.9); position: relative; right: 50%; margin-right: 5px;}
 .slide .slide_control span.btn3{margin-right: 0;}
 .slide .slide_control span.on{background: #ffffff;}
-
 .con_title{padding: 14px 25px; font-size: 0.92em; background: #ffffff;}
 .con_title span{display: block; color: #333333;}
 .con_title .left_con span{font-size: 0.78em;}
@@ -18,32 +17,49 @@
 .con_title .right_con .price{clear: both; padding-top: 8px;}
 
 /*------------------------- content2 -------------------------*/
-.content2{width: 100%; height: 63px; margin-top: 10px; padding: 10px 25px; box-sizing: border-box; background: #ffffff;}
+.content2{width: 100%; height: 63px; margin-top: 10px; box-sizing: border-box; background: #ffffff;}
+.content2 .con_inner{padding: 10px 25px;}
 .content2 span{display: block; float: left; color: #333333;}
 .content2 .review{color: #00c0c0;}
 .content2 .review_txt{clear: both; font-size: 0.85em; color: #999999;}
 
 /*------------------------- content3 -------------------------*/
-.content3{width: 100%; height: 200px; margin-top: 10px; box-sizing: border-box; /* background: #ffffff; */ overflow: hidden;}
+.content3{width: 100%; height: 200px; margin-top: 10px; box-sizing: border-box; background: #ffffff; overflow: hidden;}
 .reserv_date{padding: 10px 15px;}
 .reserv_date li{width: 40px; height: 62px; float: left; text-align: center; line-height: 22px; margin-right: 15px;}
 .reserv_date li.on{background: #7b4ce0; border-radius: 20px;}
-.reserv_date li.on span{color: #ffffff;}
-.reserv_date li span{display: block; font-size: 1.1em;}
+.reserv_date li.on a{color: #ffffff;}
+.reserv_date li a{display: block; font-size: 1.1em;}
 .reserv_date li .day{margin-top: 8px;}
 .reserv_date li .d_week{font-size: 1.0em;}
 .reserv_date li .red{color: #fc4c4e;}
 .reserv_date li .blue{color: #4e4cfc;}
 .reserv_date li:last-child{margin-right: 0;}
+.reserv_time{padding: 11px 0 0 15px; width: 350%;}
+.reserv_time li{float: left; width: 100px; height: 35px; line-height: 35px; margin-right: 15px; text-align: center; background: #ffe401; border-radius: 5px;}
+.reserv_time li:last-child{margin-right: 0;}
+.reserv_time li a{font-size: 0.7em; font-weight: 600;}
+.reserv_court{padding: 15px 0 0 15px; width: 150%;}
+.reserv_court li{float: left; width: 50px; height: 35px; line-height: 35px; text-align: center; margin-right: 12px; background: #1294F2; border-radius: 5px;}
+.reserv_court li a{font-size: 0.7em; color: #ffffff;}
 
-.reserv_time{padding: 10px 0 0 15px; width: auto;}
-.reserv_time li{float: left; width: 100px; height: 34px;}
-.reserv_time li span{font-size: 0.8em;}
+/*------------------------- content4 -------------------------*/
+.content4{width: 100%; height: 195px; margin-top: 6px; box-sizing: border-box; background: #ffffff;}
+.content4 .con_inner{padding: 10px 15px;}
+.content4 h3{font-size: 0.9em; margin-left: 11px;}
+.court_layout{padding: 15px 64.5px 0;}
+.court_layout ul li{float: left; margin-right: 21px;}
+.court_layout ul #court3{margin-right: 0;}
+.court_layout ul #court6{margin-right: 0;}
+.court_layout ul #court9{margin-right: 0;}
 
-
-
-
-
+/*------------------------- content5 -------------------------*/
+.content5{width: 100%; height: 250px; margin-top: 10px; box-sizing: border-box; background: #ffffff;}
+.content5 .con_inner{padding: 7px 15px;}
+.content5 h3{font-size: 0.9em; margin-left: 11px;}
+.facility{padding: 7px 0 0 10px;}
+.facility_txt li{line-height: 34px; color: #999999;}
+.facility_icon li{line-height: 34px;}
 
 
 
