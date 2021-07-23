@@ -1,4 +1,4 @@
-﻿body{width: 411px; height: 731px; margin: 0 auto; background:url(../img/map_bg.png) no-repeat center;}
+﻿body{width: 411px; height: 731px; margin: 0 auto; background:url(../img/map_list.png) no-repeat center;}
 
 #map{width: 411px; height: 731px; margin-left: -205.5px; position: absolute; top: 0%; left: 50%;}
 .h_menu{width: 100%; height: 50px; position: relative; top: 45px;} 
@@ -10,14 +10,26 @@
 .time_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; background: url(../img/date_icon.png) no-repeat center; cursor: pointer;}
 .filter_box{width: 45px; height: 45px; border-radius: 50px; background-color: #ffffff; top: 2px; right: 20px;}
 .filter_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; background: url(../img/equalizer.png) no-repeat center; cursor: pointer;}
-.gps_box{width: 46px; height: 46px; background: #ffffff; position: absolute; bottom: 70px; left: 17px;}
+.gps_box{width: 46px; height: 46px; background: #ffffff; position: absolute; /* bottom: 70px; */ bottom: 386px; left: 17px;}
 .gps_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; background: url(../img/gps.png) no-repeat center; cursor: pointer;}
-.list_box{width: 101px; height: 28px; background: #ffffff; border-radius: 50px; position: absolute; bottom: 65px; right: 155px;}
+.list_box{width: 101px; height: 28px; background: #ffffff; border-radius: 50px; position: absolute; bottom: 65px; right: 155px; display: none;}
 .list_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; cursor: pointer; background: #ffffff;}
 .list_icon .line_box{width: 20px; height: 20px; margin-left: 11px;  float: left;}
 .list_icon .line_box .line{width: 10px; height: 1px; display: block; background: #333333; margin: 4px auto;}
 .list_icon p{font-size: 15px; margin-top: -2px; float: left;}
-.f_box{width: 100%; height: 47px; background-color: #ffffff; position: absolute; bottom: 0;}
-.f_box .f_icon{width: 126px; height: 100%; background: url(../img/bottom_arrow.png) no-repeat right 23px;}
+.f_box{width: 100%; /* height: 47px; */ height: 376px; background-color: rgba(0,0,0,.3); position: absolute; bottom: 0;}
+.f_box .f_icon{width: 126px; height: 47px; background: url(../img/bottom_arrow.png) no-repeat right 23px;}
 .f_box .f_icon p{font-size: 16px; letter-spacing: -1px; text-align: center;}
+.f_box .list_contents{width: 100%; height: 100%;}
+.f_box .list_contents ul{position: relative;}
+.f_box .list_contents ul li a{width: 100%; height: 141px; border-top: 1px solid #333;}
+.f_box .list_contents ul li a > span{position: absolute;}
+.f_box .list_contents ul li a .title{top: 11px; left: 14px; font-size: 18px;}
+.f_box .list_contents ul li a .star{}
+.f_box .list_contents ul li a .price{}
+.f_box .list_contents ul li a .reserve{}
+.f_box .list_contents ul li a .thumb{}
+.f_box .list_contents ul li a .content{}
 #map p{cursor: pointer;}
+
+
