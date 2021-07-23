@@ -61,9 +61,15 @@
 .facility_txt li{line-height: 34px; color: #999999;}
 .facility_icon li{line-height: 34px;}
 
-
-
-
+/*------------------------- content6 -------------------------*/
+.content6{width: 100%; height: 612px; margin-top: 8px; box-sizing: border-box; background: #ffffff;}
+.content6 .con_inner{padding: 8px 25px;}
+.content6 h3{font-size: 0.9em; margin-bottom: 17px; letter-spacing: -0.3px; }
+.content6 h4{font-size: 0.95em; margin-bottom: 17px; font-weight: 500; color: #222;}
+.content6 ul li{font-size: 0.9em; margin-left: 3px; margin-bottom: 17px; color: #333333;}
+.content6 .etc li{float: left; margin-left: 20px; margin-bottom: 12px;}
+.content6 .etc li:first-child{margin-left: 3px;}
+.content6 .notice li{margin-bottom: 14px;}
 
 
 
