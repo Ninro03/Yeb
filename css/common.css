@@ -6,7 +6,7 @@ html{overflow-y: scroll; overflow-x: hidden;}
 ul{list-style:none}
 h1, h2, h3, h4, h5, h6, p{font-family: 'Noto Sans KR', sans-serif; cursor:default;}
 a{display: block; text-decoration:none; outline:0; color: #333333;}
-input,select,textarea,button{border-radius:0;vertical-align:middle}
+input,select,textarea,button{border-radius:0;/* vertical-align:middle */}
 input::-ms-clear{display:none}
 button{border:0 none; background-color:transparent; cursor:pointer}
 .cf:after{content:""; display: block; clear: both;}

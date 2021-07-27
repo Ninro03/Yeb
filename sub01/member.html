@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="css/member.css"/>
 	<script src="js/jquery-1.12.1.min.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+		
+	</script>
 </head>
 <body>
 	<div id="wrap">
@@ -91,7 +94,12 @@
 						<option value="30">30</option>	
 						<option value="31">31</option>	
 					</select>		
-					<span class="option"><input type="checkbox" name="login_option" value="로그인 상태 유지"/>Yeb <span class="puple">서비스 이용약관</span> 및 <span class="puple">개인 정보 수집 및 이용</span>에 동의 합니다.</span>
+					<div class="agree_wrap">
+						<span class="option"><input type="checkbox" name="agree" value="1" id="agree"><label for="agree"></label><div class="agree_text">
+							Yeb <span class="puple">서비스 이용약관</span> 및 <span class="puple">개인 정보 수집 및 이용</span>에 동의 합니다.</span>
+						</div>
+					</div>
+					<!-- <button>닫기</button> -->
 					<button type="submit" onclick="check_input()">회원가입</button>
 				</form>
 				<div class="gray_line"></div>

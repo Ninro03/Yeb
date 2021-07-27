@@ -22,8 +22,8 @@ footer{width: 411px; height: 230px; margin: 0 auto;}
 .popup_text3{position: absolute; top: 384px; left: 57px;}
 .popup_text4{position: absolute; top: 410px; left: 162px;}
 .popup_text5{position: absolute; top: 420px; left: 67px;}
-.pop_btn{margin: 10px; float: left;}
-.pop_btn label>input{margin-top: -5px;}
+.pop_btn{margin: 18px; float: left;}
+.pop_btn>form{color: #ffffff;}
 .slide button{float:right; margin-right: 15px; margin-top: 15px; }
 
 
