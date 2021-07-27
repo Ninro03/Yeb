@@ -1,4 +1,4 @@
-﻿#wrap{background: #efefef;}
+﻿#wrap{background: #efefef; margin-bottom: 115px;}
 /*------------------------- content1 -------------------------*/
 .content1{width: 100%; height: 310px;}
 .slide{position: relative; top: 0; left: 0; width: 100%; height: 230px;}
@@ -25,11 +25,13 @@
 
 /*------------------------- content3 -------------------------*/
 .content3{width: 100%; height: 200px; margin-top: 10px; box-sizing: border-box; background: #ffffff; overflow: hidden;}
+.content3 li input{display: none;}
+.content3 li label{display: block;}
 .reserv_date{padding: 10px 15px;}
-.reserv_date li{width: 40px; height: 62px; float: left; text-align: center; line-height: 22px; margin-right: 15px;}
-.reserv_date li.on{background: #7b4ce0; border-radius: 20px;}
-.reserv_date li.on a{color: #ffffff;}
-.reserv_date li a{display: block; font-size: 1.1em;}
+.reserv_date li{width: 40px; height: 62px; float: left; text-align: center; line-height: 22px; margin-right: 15px; border-radius: 20px;}
+.reserv_date li label{cursor: pointer;}
+.reserv_date li.on{background: #7b4ce0;}
+.reserv_date li.on label{color: #ffffff;}
 .reserv_date li .day{margin-top: 8px;}
 .reserv_date li .d_week{font-size: 1.0em;}
 .reserv_date li .red{color: #fc4c4e;}
@@ -38,14 +40,17 @@
 .reserv_time{padding: 11px 0 0 15px; width: 350%;}
 .reserv_time li{float: left; width: 100px; height: 35px; line-height: 35px; margin-right: 15px; text-align: center; background: #ffe401; border-radius: 5px; opacity: 0.3;}
 .reserv_time li.on{opacity: 1;}
+.reserv_time li.on label{ cursor: pointer;}
 .reserv_time li:last-child{margin-right: 0;}
-.reserv_time li a{font-size: 0.7em; font-weight: 600;}
+.reserv_time li label{font-size: 0.7em; font-weight: 600;}
 .reserv_court{padding: 15px 0 0 15px; width: 150%;}
 .reserv_court li{float: left; width: 50px; height: 35px; line-height: 35px; text-align: center; margin-right: 12px; background: #1294F2; border-radius: 5px; opacity: 0.3;}
 .reserv_court li.on{opacity: 1;}
-.reserv_court li a{font-size: 0.7em; color: #ffffff;}
+.reserv_court li.on label{cursor: pointer;}
+.reserv_court li label{font-size: 0.7em; color: #ffffff;}
 .reserv_select ul li.active{background: #00C0C0;}
-.reserv_select ul li.active a{color: #ffffff;}
+.reserv_select ul li.active label{color: #ffffff;}
+.reserv_btn{position: fixed; bottom: 60px; width: 411px; height: 55px; background: #00C0C0; color: #ffffff; text-align: center; line-height: 55px; font-size: 1.3em; z-index: 100;}
 
 /*------------------------- content4 -------------------------*/
 .content4{width: 100%; height: 195px; margin-top: 10px; box-sizing: border-box; background: #ffffff;}
@@ -83,14 +88,7 @@
 .content7 ul li{font-size: 0.9em; margin-left: 3px; margin-bottom: 15px; color: #333333;}
 .content7 ul li:last-child{margin-bottom: 10px;}
 
-/*------------------------- footer -------------------------*/
-footer{background-color: #dfdfdf;}
-#footer{padding: 25px; font-size: 11px; color: #8c8c8c;}
-#footer .f_terms{margin-top: 13px;}
-#footer .f_terms li{float: left; margin-right: 4px;}
-#footer .f_terms li .line{width: 1px; height: 10px; background-color: #9e9e9e; margin-top: 4px; float: left;}
-#footer .address{margin-top: 12px;}
-#footer .address p .line{width: 1px; height: 10px; background-color: #9e9e9e; margin-top: 4px; display: inline-block; margin: 0 4px;}
+
 
 
 

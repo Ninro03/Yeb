@@ -1,0 +1,25 @@
+create table members (
+	num int not null auto_increment,
+	id char(15) not null,
+	pass char(15) not null,
+	name char(10) not null,
+	gender char(2),
+	phon char(11),
+	year char(4),
+	month char(2),
+	day char(2), 
+	regist_day char(20),
+	primary key(num)
+);
+
+create table reservation (
+	num int not null auto_increment,
+	s_center char(15) not null,
+	date char(1) not null,
+	d_week char(1) not null,
+	time char(10) not null,
+	court_num char(2) not null,
+	regist_day char(20),
+	primary key(num)  
+);
+

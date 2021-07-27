@@ -2,10 +2,11 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>reservation</title>
+	<title>join</title>
 	<link rel="stylesheet" href="../css/common.css"/>
-	<link rel="stylesheet" href="css/reservation.css"/>
+	<link rel="stylesheet" href="css/join.css"/>
 	<script src="../js/jquery-1.9.1.min.js"></script>
+	    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="js/reservation.js"></script>
 </head>
 <body>
@@ -65,111 +66,6 @@
 			
 			<div class="content3">
 				<div class="con_inner">
-					<form method="post" class="reserv_select">
-						<ul class="reserv_date cf">
-							<li class="on">
-								<label for="day1" class="day">15</label>
-								<label for="day1" class="d_week">화</label>
-								<input type="radio" name="date" id="day1" checked/>
-							</li>
-							<li>
-								<label for="day2" class="day">16</label>
-								<label for="day2" class="d_week">수</label>
-								<input type="radio" name="date" id="day2"/>
-							</li>
-							<li>
-								<label for="day3" class="day">17</label>
-								<label for="day3" class="d_week">목</label>
-								<input type="radio" name="date" id="day3"/>
-							</li>
-							<li>
-								<label for="day4" class="day">18</label>
-								<label for="day4" class="d_week">금</label>
-								<input type="radio" name="date" id="day4"/>
-							</li>
-							<li>
-								<label for="day5" class="day blue">19</label>
-								<label for="day5" class="d_week blue">토</label>
-								<input type="radio" name="date" id="day5"/>
-							</li>
-							<li>
-								<label for="day6" class="day red">20</label>
-								<label for="day6" class="d_week red">일</label>
-								<input type="radio" name="date" id="day6"/>
-							</li>
-							<li>
-								<label for="day7" class="day">21</label>
-								<label for="day7" class="d_week">월</label>
-								<input type="radio" name="date" id="day7"/>
-							</li>
-						</ul>
-						<ul class="reserv_time cf">
-							<li>
-								<label for="time1">14:00 ~ 16:00</label>
-								<input type="radio" name="time" id="time1" checked/>
-							</li>
-							<li class="on">
-								<label for="time2">16:00 ~ 18:00</label>
-								<input type="radio" name="time" id="time2"/>
-							</li>
-							<li class="on">
-								<label for="time3">18:00 ~ 20:00</label>
-								<input type="radio" name="time" id="time3"/>
-							</li>
-							<li class="on">
-								<label for="time4">20:00 ~ 22:00</label>
-								<input type="radio" name="time" id="time4"/>
-							</li>
-							<li>
-								<label for="time5">22:00 ~ 24:00</label>
-								<input type="radio" name="time" id="time5"/>
-							</li>
-						</ul>
-						<ul class="reserv_court cf">
-							<li>
-								<label for="court1">1코트</label>
-								<input type="checkbox" name="court" id="court1"/>
-							</li>
-							<li>
-								<label for="court2">2코트</label>
-								<input type="checkbox" name="court" id="court2"/>
-							</li>
-							<li class="on">
-								<label for="court3">3코트</label>
-								<input type="checkbox" name="court" id="court3"/>
-							</li>
-							<li>
-								<label for="court4">4코트</label>
-								<input type="checkbox" name="court" id="court4"/>
-							</li>
-							<li class="on">
-								<label for="court5">5코트</label>
-								<input type="checkbox" name="court" id="court5"/>
-							</li>
-							<li>
-								<label for="court6">6코트</label>
-								<input type="checkbox" name="court" id="court6"/>
-							</li>
-							<li>
-								<label for="court7">7코트</label>
-								<input type="checkbox" name="court" id="court7"/>
-							</li>
-							<li>
-								<label for="court8">8코트</label>
-								<input type="checkbox" name="court" id="court8"/>
-							</li>
-							<li>
-								<label for="court9">9코트</label>
-								<input type="checkbox" name="court" id="court9"/>
-							</li>
-						</ul>
-						<input class="reserv_btn" type="submit" value="예약하기"/>
-					</form>
-				</div>
-			</div>
-			
-			<div class="content4">
-				<div class="con_inner">
 					<h3>코트배치도</h3>
 					<div class="court_layout">
 						<ul class="cf">
@@ -205,7 +101,7 @@
 				</div>
 			</div>
 			
-			<div class="content5">
+			<div class="content4">
 				<div class="con_inner">
 					<h3>시설정보</h3>
 					<div class="facility cf">
@@ -229,7 +125,7 @@
 				</div>
 			</div>
 			
-			<div class="content6">
+			<div class="content5">
 				<div class="con_inner">
 					<h3>이용안내</h3>
 					<h4>이용시간</h4>
@@ -267,21 +163,22 @@
 				</div>
 			</div>
 			
-			<div class="content7">
+			<div class="content6">
 				<div class="con_inner">
-					<h3>취소/환불</h3>
-					<h4>일반</h4>
+					<h3>매치 안내 및 환급 규정</h3>
+					<h4>매치안내</h4>
 					<ul>
-						<li>· 7일 전 취소 시 100%환불</li>
-						<li>· 5일 전 취소 시 80%환불</li>
-						<li>· 3일 전 취소 시 50%환불</li>
-						<li>· 2일 전 ~ 대관 당일 환불 불가</li>
+						<li>· 매치 시작 1시간 30분 전까지 최소 인원(4인, 8인, ...) 미달 시 매치가 취소 됩니다. 취소 시 카카오톡을 통해 안내드리며 캐시는 전액 환급됩니다.</li>
 					</ul>
-					<h4>천재지변</h4>
+					<h4>환급규정</h4>
 					<ul>
-						<li>· 당일 천재지변으로 인해 구장 이용이 불가한 경우 100%환불</li>
-						<li>· (적용 기준:호우경보, 대설경보, 태풍주의보, 태풍경보)</li>
+						<li>· 매치 시간 기준 ex) 20:00</li>
+						<li>· 2일 전 취소 시 : 전액 환급</li>
+						<li>· 1일 전 취소 시 : 80% 환급</li>
+						<li>· 당일 00시부터 1시간 30분 전까지 취소 시 : 20% 환급 <br/>&nbsp; ex) ~18:30</li>
+						<li>· 당일 1시간 30분 미만 취소 시 : 0% <br/>&nbsp; ex) ~18:00</li>
 					</ul>
+					<p>취소 하지 않고 불참시 경고를 적용, 향후 이용에 제한이 있습니다.</p>
 				</div>
 			</div>
 		</section>

@@ -41,37 +41,31 @@
 	};
 	
 	/*----- content3 -----*/
-	var tab = $('.reserv_date > li');
-	var content = $('.reserv_time');
-	content.hide().eq(0).show();
-	tab.click(function(e){
-		e.preventDefault();	
-		var tg = $(this);
-		var i = tg.index();
-		tab.removeClass('on');
-		tg.addClass('on');
-		content.css('display','none');
-		content.eq(i).css('display','block');
+	var date = $('.reserv_date > li');
+	date.find("input:radio").on('click', function(){ 
+		if($(this).prop('checked')){
+			var tg = $(this);
+			date.removeClass('on');
+			tg.parent().addClass('on');
+		}
 	});
-	
-	var m_tab = $('.reserv_time > li');
-	var m_content = $('.reserv_court');
-	m_content.hide().eq(0).show();
-	m_tab.click(function(e){
-		e.preventDefault();	
-		var tg = $(this);
-		var i = tg.index();
-		m_tab.removeClass('active');
-		tg.addClass('active');
-		m_content.css('display','none');
-		m_content.eq(i).css('display','block');
+
+	var time = $('.reserv_time > li');
+	time.find("input:radio").on('click', function(){ 
+		if($(this).prop('checked') && $(this).parent().hasClass('on')){
+			var tg = $(this);
+			time.removeClass('active');
+			tg.parent().addClass('active');
+		}
 	});
-	
-	var l_tab = $('.reserv_court > li');
-	l_tab.click(function(e){
-		e.preventDefault();
-		var tg = $(this);
-		tg.addClass('active');
+	var court = $('.reserv_court > li');
+	court.find("input:checkbox").on('click', function(){ 
+		if($(this).prop('checked') && $(this).parent().hasClass('on')){
+			var tg = $(this);
+			tg.parent().addClass('active');
+		}else{
+			$(this).parent().removeClass("active"); 
+		} 
 	});
 	
 	/*----- content4 -----*/

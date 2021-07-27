@@ -15,7 +15,7 @@ button{border:0 none; background-color:transparent; cursor:pointer}
 
 
 
-body{width: 100%; height: 2500px; margin: 25px auto 0; background: url(../reservation/img/bg/bg2.png) no-repeat top center;}
+body{width: 100%; height: auto; margin: auto 0 ; background: url(../reservation/img/bg/bg2.png) no-repeat top center;}
 #wrap{width: 411px; margin: 0 auto 25px;}
 header{position: relative; width: 411px; height: 50px; margin: 0 auto;}
 section{position: relative; width: 411px; margin: 0 auto; overflow: hidden;}
@@ -28,7 +28,16 @@ footer{position: relative; width:411px; margin: 0 auto;}
 .map_btn{width: 50px; height: 50px; background: url(../img/map_icon.png) no-repeat center center;}
 
 /*------------------------- footer -------------------------*/
-#f_menu{width:411px; height: 60px; border-top: 1px solid #dddddd; background: #ffffff; position: fixed; bottom: 0;}
+footer{background-color: #dfdfdf;}
+#footer{padding: 25px; font-size: 11px; color: #8c8c8c;}
+#footer .f_terms{margin-top: 13px;}
+#footer .f_terms li{float: left; margin-right: 4px;}
+#footer .f_terms li .line{width: 1px; height: 10px; background-color: #9e9e9e; margin-top: 4px; float: left;}
+#footer .address{margin-top: 12px;}
+#footer .address p .line{width: 1px; height: 10px; background-color: #9e9e9e; margin-top: 4px; display: inline-block; margin: 0 4px;}
+
+/*------------------------- f_menu -------------------------*/
+#f_menu{width:411px; height: 60px; border-top: 1px solid #dddddd; background: #ffffff; position: fixed; bottom: 0; z-index: 100;}
 #f_menu ul{width: 100%; height: 100%;}
 #f_menu ul li{float: left; width: 25%; height: 100%; text-align: center;}
 #f_menu ul li a{height: 100%; padding-top: 34px; font-size: 0.9em;  box-sizing: border-box;}
