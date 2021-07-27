@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>reservation</title>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<link rel="stylesheet" href="css/reservation.css"/>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="js/reservation.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div id="header" class="cf">
+				<div id="h_menu" class="fl">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<button class="map_btn fr" type="button" onClick="location.href='../map.html';"></button>
+			</div>
+		</header>
+		<section>
+			<div class="content1">
+				<div class="con_inner">
+					<div class="slide">
+						<div class="slide_img">
+							<img src="img/slide_img1.png" alt="체육관 전경" style="left: 0%;"/>
+							<img src="img/slide_img2.png" alt="코트 하나"/>
+							<img src="img/slide_img3.png" alt="특이사항"/>
+						</div>
+						<div class="slide_control cf">
+							<span class="btn1 on"></span>
+							<span class="btn2"></span>
+							<span class="btn3"></span>
+						</div>
+					</div>
+					<div class="con_title cf">
+						<div class="left_con fl cf">
+							<span class="center_name">송파배드민턴체육관</span>
+							<span class="address">서울시 송파구 문정로 176</span>
+							<span class="court fl">코트 8면</span>
+							<span class="fl">&nbsp;·&nbsp;</span>
+							<span class="parking fl">주차가능</span>
+						</div>
+						<div class="right_con fr">
+							<span class="star_img fl"><img src="img/star.png" alt="별점"/></span>
+							<span class="grade fl">4.1</span>
+							<span class="grade_num fl">(19)</span>
+							<span class="price">1인당 ₩1,500원</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content2">
+				<div class="con_inner">
+					<div class="review_text cf">
+						<span class="review">리뷰&nbsp;</span>
+						<span class="review_count">0개</span>
+						<span class="review_txt">리뷰가 없습니다.이용 후 첫 리뷰를 남겨보세요!</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content3">
+				<div class="con_inner">
+					<form method="post" class="reserv_select">
+						<ul class="reserv_date cf">
+							<li class="on">
+								<label for="day1" class="day">15</label>
+								<label for="day1" class="d_week">화</label>
+								<input type="radio" name="date" id="day1" checked/>
+							</li>
+							<li>
+								<label for="day2" class="day">16</label>
+								<label for="day2" class="d_week">수</label>
+								<input type="radio" name="date" id="day2"/>
+							</li>
+							<li>
+								<label for="day3" class="day">17</label>
+								<label for="day3" class="d_week">목</label>
+								<input type="radio" name="date" id="day3"/>
+							</li>
+							<li>
+								<label for="day4" class="day">18</label>
+								<label for="day4" class="d_week">금</label>
+								<input type="radio" name="date" id="day4"/>
+							</li>
+							<li>
+								<label for="day5" class="day blue">19</label>
+								<label for="day5" class="d_week blue">토</label>
+								<input type="radio" name="date" id="day5"/>
+							</li>
+							<li>
+								<label for="day6" class="day red">20</label>
+								<label for="day6" class="d_week red">일</label>
+								<input type="radio" name="date" id="day6"/>
+							</li>
+							<li>
+								<label for="day7" class="day">21</label>
+								<label for="day7" class="d_week">월</label>
+								<input type="radio" name="date" id="day7"/>
+							</li>
+						</ul>
+						<ul class="reserv_time cf">
+							<li>
+								<label for="time1">14:00 ~ 16:00</label>
+								<input type="radio" name="time" id="time1" checked/>
+							</li>
+							<li class="on">
+								<label for="time2">16:00 ~ 18:00</label>
+								<input type="radio" name="time" id="time2"/>
+							</li>
+							<li class="on">
+								<label for="time3">18:00 ~ 20:00</label>
+								<input type="radio" name="time" id="time3"/>
+							</li>
+							<li class="on">
+								<label for="time4">20:00 ~ 22:00</label>
+								<input type="radio" name="time" id="time4"/>
+							</li>
+							<li>
+								<label for="time5">22:00 ~ 24:00</label>
+								<input type="radio" name="time" id="time5"/>
+							</li>
+						</ul>
+						<ul class="reserv_court cf">
+							<li>
+								<label for="court1">1코트</label>
+								<input type="checkbox" name="court" id="court1"/>
+							</li>
+							<li>
+								<label for="court2">2코트</label>
+								<input type="checkbox" name="court" id="court2"/>
+							</li>
+							<li class="on">
+								<label for="court3">3코트</label>
+								<input type="checkbox" name="court" id="court3"/>
+							</li>
+							<li>
+								<label for="court4">4코트</label>
+								<input type="checkbox" name="court" id="court4"/>
+							</li>
+							<li class="on">
+								<label for="court5">5코트</label>
+								<input type="checkbox" name="court" id="court5"/>
+							</li>
+							<li>
+								<label for="court6">6코트</label>
+								<input type="checkbox" name="court" id="court6"/>
+							</li>
+							<li>
+								<label for="court7">7코트</label>
+								<input type="checkbox" name="court" id="court7"/>
+							</li>
+							<li>
+								<label for="court8">8코트</label>
+								<input type="checkbox" name="court" id="court8"/>
+							</li>
+							<li>
+								<label for="court9">9코트</label>
+								<input type="checkbox" name="court" id="court9"/>
+							</li>
+						</ul>
+						<input class="reserv_btn" type="submit" value="예약하기"/>
+					</form>
+				</div>
+			</div>
+			
+			<div class="content4">
+				<div class="con_inner">
+					<h3>코트배치도</h3>
+					<div class="court_layout">
+						<ul class="cf">
+							<li id="court1">
+								<a href="#"><img src="img/court.png" alt="코트1"/></a>
+							</li>
+							<li id="court2">
+								<a href="#"><img src="img/court.png" alt="코트2"/></a>
+							</li>
+							<li id="court3">
+								<a href="#"><img src="img/court_on.png" alt="코트3"/></a>
+							</li>
+							<li id="court4" class="cf">
+								<a href="#"><img src="img/court.png" alt="코트4"/></a>
+							</li>
+							<li id="court5">
+								<a href="#"><img src="img/court_on.png" alt="코트5"/></a>
+							</li>
+							<li id="court6">
+								<a href="#"><img src="img/court.png" alt="코트6"/></a>
+							</li>
+							<li id="court7" class="cf">
+								<a href="#"><img src="img/court.png" alt="코트7"/></a>
+							</li>
+							<li id="court8">
+								<a href="#"><img src="img/court.png" alt="코트8"/></a>
+							</li>
+							<li id="court9">
+								<a href="#"><img src="img/court.png" alt="코트9"/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content5">
+				<div class="con_inner">
+					<h3>시설정보</h3>
+					<div class="facility cf">
+						<ul class="facility_txt fl">
+							<li>주차가능</li>
+							<li>조명</li>
+							<li>바닥 타입 탄성마루</li>
+							<li>샤워실</li>
+							<li>탈의실</li>
+							<li>흡연장</li>
+						</ul>
+						<ul class="facility_icon fr">
+							<li><img src="img/car_icon.png" alt="주차"/></li>
+							<li><img src="img/light_icon.png" alt="조명"/></li>
+							<li><img src="img/net_icon.png" alt="바닥타입"/></li>
+							<li><img src="img/shower_icon.png" alt="샤워"/></li>
+							<li><img src="img/locker_icon.png" alt="탈의실"/></li>
+							<li><img src="img/smoking_icon.png" alt="흡연장"/></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content6">
+				<div class="con_inner">
+					<h3>이용안내</h3>
+					<h4>이용시간</h4>
+					<ul>
+						<li>· 평일 : 09:00 ~ 24:00</li>
+						<li>· 주말 : 09:00 ~ 22:00</li>
+					</ul>
+					<h4>코로나 관련</h4>
+					<ul>
+						<li>
+							· 방문 대장 및 발열 체크 필수<br/>
+							<span>(시설 입구 배치/미작성 시 향후이용에 대한 불이익)</span>
+						</li>
+						<li>
+							· 샤워시설 이용 금지<br/>
+							<span>(코로나 확산 방지 차원/별도의 안내 시 까지)</span>
+						</li>
+					</ul>
+					<h4>주차</h4>
+					<ul>
+						<li>· 태블릿으로 주차 등록(안내데스크 비치)</li>
+					</ul>
+					<h4>기타</h4>
+					<ul class="etc cf">
+						<li>· 물/음료 판매</li>
+						<li>· 셔틀콕 판매</li>
+						<li>· 거트 작업</li>
+					</ul>
+					<h4>공지</h4>
+					<ul class="notice">
+						<li>· 고성방가 및 휘슬 사용 금지</li>
+						<li>· 흡연은 지정된 장소에서만 허용</li>
+						<li>· 적발 시 추후 대관 이용 불이익</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="content7">
+				<div class="con_inner">
+					<h3>취소/환불</h3>
+					<h4>일반</h4>
+					<ul>
+						<li>· 7일 전 취소 시 100%환불</li>
+						<li>· 5일 전 취소 시 80%환불</li>
+						<li>· 3일 전 취소 시 50%환불</li>
+						<li>· 2일 전 ~ 대관 당일 환불 불가</li>
+					</ul>
+					<h4>천재지변</h4>
+					<ul>
+						<li>· 당일 천재지변으로 인해 구장 이용이 불가한 경우 100%환불</li>
+						<li>· (적용 기준:호우경보, 대설경보, 태풍주의보, 태풍경보)</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div id="footer">
+				<h3 class="f_logo"><img src="../img/f_logo.png" alt="f_logo"/></h3>
+				<ul class="f_terms cf">
+					<li>이용약관</li>
+					<li><span class="line"></span></li>
+					<li><b>개인정보처리방침</b></li>
+					<li><span class="line"></span></li>
+					<li>사업자 정보 확인</li>
+				</ul>
+				<div class="address">
+					<p>Yeb<span class="line"></span>경기도 안양시 만안구 안양로 303 안양메쎄타워 2층</p>
+					<p>contact03@yebminton.com</p>
+					<p>사업자번호 : 333-33-33333<span class="line"></span>대표남최안</p>
+				</div>
+				<div class="copy">
+					<p>Copyright Yeb All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<div id="f_menu">
+			<ul class="cf">
+				<li><a href="../index.html">홈</a></li>
+				<li><a href="../index.html">예약</a></li>
+				<li class="on"><a href="../index.html">커뮤니티</a></li>
+				<li><a href="../index.html">내정보</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿*{margin: 0; padding: 0; border: 0; font-family: 'Malgun Gothic', sans-serif;}
+
+ul, li{list-style: none;}
+a{text-decoration: none; display: block; color: #333333;}
+.cf:after{content: ''; display: block; clear: both;}
+
+header, section, footer{width: 100%;}
+
+/* 헤더 */
+#header{width: 1420px; height: 80px; padding: 10px 0; margin: 0 auto; background: #ffffff; box-sizing: border-box;}
+
+/* 로고 */
+#header .logo{width: 150px; height: auto; margin-left: 10px; float: left;}
+#header .logo a{width: 100%; height: 100%;}
+#header .logo img{width: 100px;}
+
+/* 메뉴, gnb	 */
+.nav{float: right; margin-top: 5px;}
+.nav .menu{margin-right: 10px; float: left;}
+.nav .menu li{padding: 10px 10px; float: left;}
+.nav .menu li a{font-size: 18px; font-weight: bold; color: #333333;}
+.nav .menu li:hover a{padding-bottom: 5px; border-bottom: 3px solid #00c0c0;}
+.line{width: 1px; height: 20px; background: rgba(0,0,0,.3); margin: 13px 0; float: left;}
+.nav .gnb{margin-left: 10px; float: left;}
+.nav .gnb li{padding: 10px 10px; float: left;}
+.nav .gnb li a{font-size: 18px; font-weight: bold; color: #808080;}
+.nav .gnb li:hover a{color: #00c0c0;}
+
+
+/* 메인 */
+#section{width: 100%; background: #00ff00;}
+
+/* 메인 이미지 슬라이드 */
+.content1{width: 100%; height: 500px;}
+.content1 .content1_inner{width: 1420px; height: 100%; position: relative; top: 0; left: 50%; margin-left: -710px;}
+.content1 .main_slide{width: 1420px; height: 100%; padding: 1% 0; margin: 0 auto; background: #008c8c; overflow: hidden; box-sizing: border-box; position: absolute;}
+.content1 .main_slide>*{position: absolute;}
+.content1 .main_slide ul{width: 4260px; height: 461px;}
+.content1 .main_slide ul li{width: 7.84%; height: 100%; box-sizing: border-box; margin: 0 0.04%; float: left;}
+.content1 .main_slide ul li:last-child{width: 7.76%;}
+
+.content1 .main_slide ul li a{width: 100%; height: 100%; position: relative;}
+.content1 .main_slide ul li a img{width: 100%; height: 100%;}
+.content1 .main_slide ul li a span{position: absolute;}
+.content1 .main_slide ul li a .area{top: 0; left: 0; color: #ff0000;}
+.content1 .main_slide ul li a .name{top: 20px; left: 20px; color: #0000ff;}
+
+.content1 button{width: 50px; height: 50px; border-radius: 50%; cursor: pointer; position: absolute;}
+.content1 button:hover{box-shadow: 1px 1px 1px #333;}
+.content1 button.prev{top: 50%; left: -25px; margin-top: -25px;}
+.content1 button.next{top: 50%; right: -25px; margin-top: -25px;}
+.content1 button img{height: 50px;}
+
+/* 공지사항 */
+.content2{width: 100%; height: 110px;}
+.content2 .notice{width: 1420px; height: 100%; margin: 0 auto; background: #ff00ff;}	
+.content2 .notice>img{width: 15%; height: 70px; padding: 20px 0 0 0; margin-left: 12.5%; display: block; float: left;}	
+.content2 .notice ul{width: 60%; padding: 20px 0; float: left;}	
+.content2 .notice ul li{background-color: #fce3b2;}	
+.content2 .notice ul li img{width: 50%; height: 70px; margin: 0 auto; display: block;}	
+
+/* 대회일정 */
+.content3{width: 100%; height: 1420px;}
+.content3 .match{width: 1420px; height: 100%; padding: 20px; margin: 0 auto; background: #ffffff; box-sizing:border-box;}
+.content3 .match .match_box1{width: 65.666%; height: 32.333%; background: #ff0000; margin: 0.5%; float: left;}
+.content3 .match .match_box2{width: 32.333%; height: 65.666%; background: #53ef10; margin: 0.5%; float: right;}
+.content3 .match .match_box3{width: 32.333%; height: 32.333%; margin:0.5%; background: #0ff; float: left;}
+.content3 .match .match_box4{width: 32.333%; height: 32.333%; margin:0.5%; background: #ff00ff; float: left;}
+.content3 .match .match_box5{width: 32.333%; height: 32.333%; margin:0.5%; background: #ffff00; float: left;}
+.content3 .match .match_box6{width: 32.333%; height: 32.333%; margin:0.5%; background: #0011ff; float: left;}
+.content3 .match .match_box7{width: 32.333%; height: 32.333%; margin:0.5%; background: #cc00ff; float: right;}
+
+.content4{width: 100%; height: 500px;}
+.content4 .con_inner{width: 1420px; height: 100%; padding: 1%; margin: 0 auto; background: #efaade; box-sizing: border-box;}
+.content4 .calendar{width: 69%; height: 100%; background: #ff2346; float: left;}
+.content4 .calendar_post{width: 29%; height: 100%; background: #2346ff; float: right;}
+
+
+	
+	
+/* 푸터 */
+#footer{width: 1420px; margin: 0 auto; background: #0000ff; margin-top: 200px;}

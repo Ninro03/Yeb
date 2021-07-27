@@ -1,0 +1,32 @@
+﻿/*------------------------- section -------------------------*/
+#tab_menu{width: 100%; height: 47px; line-height: 45px; text-align: center; box-sizing: border-box;}
+#tab_menu ul li{width: 50%; height: 47px; float: left; border-bottom: 1px solid #999999; box-sizing: border-box;}
+#tab_menu ul li a{width: 100%; height: 100%; font-size: 1.1em; color: #333333;}
+#tab_menu ul li.active{border-bottom: 2px solid #00C0C0;}
+#tab_menu ul li.active a{color: #00C0C0;}
+#tab_con{width: 100%;}
+
+/*------------------------- section-match -------------------------*/
+#tab_con #match{width: 100%;}
+#tab_con #match .s_tab{width: 100%; height: 40px; line-height: 40px;}
+#tab_con #match .s_tab ul{width: 100%; height: 40px; border-bottom: 1px solid #999999;}
+#tab_con #match .s_tab ul li{width: auto; height: 40px; float: left;}
+#tab_con #match .s_tab ul li a{height: 100%; font-size: 0.87em; margin: 0 19.2px; color: #999999; box-sizing: border-box;}
+#tab_con #match .s_tab ul li.act a{border-bottom: 2px solid #00C0C0; color: #00C0C0;}
+
+#tab_con #match .match_list .s_list_tab li{width: 100%; height: 70px; padding: 15px; box-sizing: border-box; position: relative; border-bottom: 1px solid #999999;}
+#tab_con #match .match_list .s_list_tab li span{float: left; width: 80%; letter-spacing: -0.5px;}
+#tab_con #match .match_list .s_list_tab li span.list_tit{font-size: 0.9em; margin-top: 2px;}
+#tab_con #match .match_list .s_list_tab li span.list_stit span{display: block; width: auto; float: left; font-size: 0.72em; margin-right: 9px;}
+#tab_con #match .match_list .s_list_tab li button{position: absolute; top: 35%; right: 4.8%; width: 60px; height: 26px; line-height:26px; color: #ffffff; border-radius: 3px; background: #7B4CE0; font-size: 0.77em; font-weight: bold;}
+
+/*------------------------- section-chatting -------------------------*/
+#tab_con #chatting{width: 100%;}
+#tab_con #chatting .con_list ul li{width: 100%; height: 60px; padding: 10px 9px; box-sizing: border-box; position: relative; border-bottom: 1px solid #999999;}
+#tab_con #chatting .con_list ul li span{float: left; width: 80%; letter-spacing: -0.5px;}
+#tab_con #chatting .con_list ul li span.list_date{display: block; width: 15%; font-size: 0.6em; margin-top: 9px;}
+#tab_con #chatting .con_list ul li span.list_tit{font-size: 0.9em; margin-top: 2px; margin-left: 7px;}
+#tab_con #chatting .con_list ul li span.list_stit{margin-left: 7px;}
+#tab_con #chatting .con_list ul li span.list_stit span{display: block; width: auto; float: left; font-size: 0.72em; margin-right: 9px;}
+#tab_con #chatting .con_list ul li button{position: absolute; top: 28%; right: 4.8%; width: 60px; height: 26px; line-height:26px; color: #333333; border-radius: 3px; background: #FFE401; font-size: 0.77em; font-weight: bold;}
+
