@@ -4,13 +4,25 @@
 	<meta charset="UTF-8">
 	<title>cummunity</title>
 	<link rel="stylesheet" href="css/common.css"/>
-	<link rel="stylesheet" href="css/match.css"/>
+	<link rel="stylesheet" href="css/match1.css"/>
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/match.js"></script>
 </head>
 <body>
 	<div id="wrap">
-		<div class="pop">
+
+		<header>
+			<div id="header" class="cf">
+				<div id="h_menu" class="fl">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="filter"><img src="img/filter.png" alt=""/></div>
+			</div>
+		</header>
+		<section>
+			<div class="pop">
 				<div class="popup_content">
 					<div class="popup_inner">
 						<form action="">
@@ -19,16 +31,13 @@
 
 							</div>
 							<div class="pop_tit">종류</div>
-							<input type="checkbox" id="cb1"/>
-							<label for="cb1">전체</label>
-							
-							<input type="button" id="test" value="test" />
-							<input type="checkbox" id="cb2"/>
-							<label for="cb2">접수기간</label>
-						
-							<input type="checkbox" id="cb3"/>
-							<label for="cb3">대회기간</label>
-							
+								<input type="checkbox" id="check1">
+								<label for="check1"></label>
+								<input type="checkbox" id="check2">
+								<label for="check2"></label>
+								
+								
+								
 							<div class="line"></div>
 							<div class="pop_tit">상태</div>
 							<input type="checkbox" id="cb4"/>
@@ -54,27 +63,17 @@
 							<input type="checkbox" id="cb10"/>
 							<label for="cb10">직접입력</label>
 							
-							<div class="btn_wrap">
-								<button class="btn1 fl">닫기</button>
-								<button class="btn2 fl">설정하기</button>
+							<div class="button">
+								<input type="submit" value="닫기"/ id="close">
+							
+								<input type="submit" value="설정하기" id="submit"/>
+								
 							</div>
 						</form>
 				
 					</div>
 				</div>
 			</div>	
-		<header>
-			<div id="header" class="cf">
-				<div id="h_menu" class="fl">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<div class="filter"><img src="img/filter.png" alt=""/></div>
-			</div>
-		</header>
-		<section>
-			
 			<div id="contest">
 				<div class="contest_h_box">
 					<div class="contest_tit">현재 진행중인 대회 <span class="purple">1건</span></div>

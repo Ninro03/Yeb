@@ -2,11 +2,11 @@
 프로젝트 폴더를 만들지 않고 상위 폴더 ex)htdocs/php 에서 git bash를 선택
 
 git config --global user.email "hayoung0295@gmail.com"	아이디연결
-git config --global user.name "hayoung"			이름연동
+git config --global user.name "hayoung9835"			이름연동
 git clone -b 브런치명 --single-branch 깃허브주소(원격저장소주소)
 
 
-ex) git clone -b hayoung --single-branch https://github.com/hayoung/Yeb => 깃허브(원격저장소)에서 로컬저장소로 branch hayoung만을 가져옴
+ex) git clone -b hayoung --single-branch https://github.com/hayoung9835/Yeb => 깃허브(원격저장소)에서 로컬저장소로 branch hayoung만을 가져옴
 
 
 git init						.git 생성

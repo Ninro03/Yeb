@@ -2,12 +2,20 @@
 	
 	function swing() {
 		$('.click_1').animate({'right':'20px'},1000).animate({'left':'300px'},1000, swing);
-		$('.click_1').animate({'left':'300px'},600).animate({'right':'20px'},600,swing); 
 		}	
 	swing();
 
-
-
+	$('.slide button').click(function(){
+		$('.pop').css('display','none');
+	});	
+	
+	/* 	$('.popup_text4').DB_springMove({
+			key:'e24102',               
+			dir:'y',              
+			mirror:1,             
+			radius:5,             
+		})			
+ */
 
 	/* content1 bxslider */
 	$('.bxslider').bxSlider( {

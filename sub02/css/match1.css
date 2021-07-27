@@ -12,33 +12,59 @@ footer{position: fixed; bottom: 0; width:411px; margin: 0 auto;}
 /* 상세정보 */
 .pop{position: fixed; width: 411px; height: 100%; margin: 0px auto; background: rgba(0,0,0,.3); z-index: 1000; display: none;}
 .popup_content{width: 100%; margin: 0px auto;   position: absolute; bottom: 0%;}
-.popup_inner{width: 89%; height: 370px; margin: 0 auto; padding: 24px; background: #ffffff; position: relative;}
+.popup_inner{width: 89%; height: 500px; margin: 0 auto; padding: 24px; background: #ffffff;}
 
 
-.reset_button{width: 100%; height: 20px;}
-#reset_img{position: absolute;right : 25px; z-index:10;}
+.reset_button{width: 100%; height: 32px;}
+#reset_img{position: absolute;right : 10px; z-index:10;}
 #reset{position: absolute;right : 10px; z-index:100; padding: 10px;/*  display: none; */}
-.line{width: 100%; height: 20px;border-bottom: 1px solid #d1d1d1;}
-.pop_tit{font-size: 15px; width: 100%; margin: 10px 0 15px 10px;}
+.line{width: 100%; height: 15px;border-bottom: 1px solid #d1d1d1;}
+.pop_tit{font-size: 14px; width: 100%; margin: 10px 0 10px 10px;}
 
-form>input + label {display: inline-block; border: 1px solid #d1d1d1; cursor: pointer; border-radius: 25px; text-align: center; vertical-align: middle; padding: 5px 15px; color: #777777; font-size: 16px; margin-right: 5px;}
+/* form>input + label {display: inline-block; border: 1px solid #d1d1d1; cursor: pointer; border-radius: 25px; text-align: center; vertical-align: middle; padding: 5px 15px; color: #777777; font-size: 15px; margin-right: 5px;}
 form>input:checked + label {background-color: #00C0C0; color: #ffffff; border: 1px solid #00C0C0;}
 form>input{display: none;}
+form>p{width: 100%; height: 30px; position: absolute; bottom: 0%; background: #ff0000;}
 
-/* 
 .button{width: 100%; height: 50px; position: absolute; bottom: 20%;}
 
 .button>input + label {display: inline-block; border: 1px solid #ffff00; cursor: pointer; text-align: center; vertical-align: middle; padding: 20px 69px; color: #777777; font-size: 15px; }
 .button>input:checked + label {background-color: #00C0C0; color: #ffffff; border: 1px solid #00C0C0;}
 .button>input{display: none;}
-form>p{width: 100%; height: 30px; position: absolute; bottom: 0%; background: #ff0000;}
+form>p{width: 100%; height: 30px; position: absolute; bottom: 0%; background: #ff0000;} */
+
+
+/* dustmq */
+input[id="check1"]+label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/home.png') no-repeat 0 0px / contain;
+}
+
+input[id="check1"]:checked+label {
+    background: url('../img/home_on.png') no-repeat 0 1px / contain;
+}
+
+input[id="check1"] {
+    display: none;
+}
+
+input[id="check2"]+label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/home.png') no-repeat 0 0px / contain;
+}
+
+input[id="check2"]:checked+label {
+    background: url('../img/home_on.png') no-repeat 0 1px / contain;
+}
+/* 
+input[id="check2"] {
+    display: none;
+}
  */
-.btn_wrap{width: 100%; height: 50px;margin-top: 20px; position: absolute; bottom: 0; left: 0;}
-.btn1{width: 35%; height: 100%; background: #777777; color: #ffffff; font-size: 1.2em;}
-.btn2{width: 65%; height: 100%; background: #00C0C0; color: #ffffff; font-size: 1.2em;}
-
-
-
 
 
 

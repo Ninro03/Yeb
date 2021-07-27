@@ -13,11 +13,18 @@ footer{width: 411px; height: 230px; margin: 0 auto;}
 /* section */
 
 /* pop */
-.pop{position: absolute; width: 411px; height: 100%; margin: 0px auto; background: rgba(0,0,0,.5); z-index: 1000;}
+.pop{position: absolute; width: 411px; height: 100%; margin: 0px auto; background: rgba(0,0,0,.7); z-index: 1000;}
 .popup{width: 100%; margin: 0px auto;   position: relative; bottom: 0%;}
-.bar{position: absolute; top: 200px; left: 44px;}
+.bar{position: absolute; top: 200px; left: 52px;}
 .click_1{position: absolute; left: 65px; top: 198px;}
-
+.popup_text1{position: absolute; top: 150px; left: 109px;}
+.popup_text2{position: absolute; top: 600px; left: 42px;}
+.popup_text3{position: absolute; top: 384px; left: 57px;}
+.popup_text4{position: absolute; top: 410px; left: 162px;}
+.popup_text5{position: absolute; top: 420px; left: 67px;}
+.pop_btn{margin: 10px; float: left;}
+.pop_btn label>input{margin-top: -5px;}
+.slide button{float:right; margin-right: 15px; margin-top: 15px; }
 
 
 /* content1 */

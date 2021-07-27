@@ -1,0 +1,66 @@
+﻿body{width: 411px; height: 731px; margin: 0 auto; background:url(../img/map_filter.png) no-repeat center;}
+
+#map{width: 411px; height: 731px; margin-left: -205.5px; position: absolute; top: 0%; left: 50%;}
+
+/* h_menu */
+.h_menu{width: 100%; height: 50px; position: relative; top: 45px;} 
+.h_menu > *{position: absolute;}
+.search_box{top: 2px; left: 13px;}
+.search_box .search{width: 193px; height: 45px; border: 0px; border-radius: 50px; padding-left: 60px; background: #ffffff url(../img/serch_icon.png) no-repeat; background-position: 11px 14px; font-size: 19px; color: #808080;}
+.search_icon{width: 47px; height: 47px; border: 0; border-radius: 0px 23px 23px 0px; background: url(../img/search_arrow.png) no-repeat center; position: absolute; top: 0px; right: 0px; cursor: pointer;}
+.time_box{width: 45px; height: 45px; border-radius: 50px; background-color: #ffffff; top: 2px; right: 83px;}
+.time_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; background: url(../img/date_icon.png) no-repeat center; cursor: pointer;}
+.filter_box{width: 45px; height: 45px; border-radius: 50px; background-color: #ffffff; top: 2px; right: 20px;}
+.filter_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; background: url(../img/equalizer.png) no-repeat center; cursor: pointer;}
+
+
+/* gps_box */
+.gps_box{width: 46px; height: 46px; background: #ffffff; position: absolute; /* bottom: 70px; */ bottom: 386px; left: 17px;}
+.gps_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; background: url(../img/gps.png) no-repeat center; cursor: pointer;}
+
+/* list_box */
+.list_box{width: 101px; height: 28px; background: #ffffff; border-radius: 50px; position: absolute; bottom: 65px; right: 155px; display: none;}
+.list_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; cursor: pointer; background: #ffffff;}
+.list_icon .line_box{width: 20px; height: 20px; margin-left: 11px;  float: left;}
+.list_icon .line_box .line{width: 10px; height: 1px; display: block; background: #333333; margin: 4px auto;}
+.list_icon p{font-size: 15px; margin-top: -2px; float: left;}
+
+/* f_box */
+.f_box{width: 100%; /* height: 47px; */ height: 376px; background-color: #ffffff; position: absolute; bottom: 0; overflow: hidden; display: none;}
+.f_box .f_icon{width: 126px; height: 47px; background: url(../img/bottom_arrow.png) no-repeat right 23px;}
+.f_box .f_icon p{font-size: 16px; letter-spacing: -1px; text-align: center;}
+.f_box .list_contents{width: 100%; height: 100%;}
+.f_box .list_contents ul{position: relative;}
+.f_box .list_contents ul li a{width: 100%; height: 141px; border-top: 1px solid #e0dddd;}
+.f_box .list_contents ul li a > span{position: absolute;}
+.f_box .list_contents ul li a .title{top: 11px; left: 14px; font-size: 18px;}
+.f_box .list_contents ul li a .star{top: 43px; left: 17px;}
+.f_box .list_contents ul li a .star img{vertical-align: top; margin-top: 3px;}
+.f_box .list_contents ul li a .star .color{font-size: 14px; color: #cccccc;}
+.f_box .list_contents ul li a .price{top: 44px; right: 131px; font-size: 14px;}
+.f_box .list_contents ul li a .reserve{bottom: 42px; right: 130px; width: 58px; height: 18px; font-size: 11px; color: #333333; text-align: center; border: 1px solid #333333; border-radius: 2px;}
+.f_box .list_contents ul li a .thumb{top: 18px; right: 10px;}
+.f_box .list_contents ul li a .content{bottom: 21px; left: 13px; font-size: 11px; letter-spacing: -0.2px; color: #999999;}
+/* f_box2 */
+.f_box2{width: 100%; /* height: 47px; */ height: 376px; background-color: rgba(0,0,0,.3); position: absolute; bottom: 0;}
+
+.f_box2 fieldset{width: 100%; height: 106px;}
+.f_box2 fieldset legend{font-size: 14px; margin-top: 20px; margin-left: 16px;}
+.f_box2 fieldset label{width: 64px; height: 33px; margin-top: 12px; margin-left: 16px; text-align: center; border: 1px solid #cccccc; border-radius: 77px; line-height: 33px; float: left; cursor: pointer;}
+.f_box2 fieldset input{display: none;}
+.f_box2 .line{width: 100%; height: 1px; background-color: #333333;}
+
+
+.f_box2 .field1 label.ch1{width: 64px;}
+.f_box2 .field1 label.ch2{width: 82px;}
+.f_box2 .field1 label.ch3{width: 72px;}
+
+.f_box2 .field2 label{width: 72px;}
+.f_box2 .field2 label.ch4{width: 64px;}
+
+.f_box2 .field3 label.ch10{width: 82px;}
+
+.f_box2 .submit{}
+#map p{cursor: pointer;}
+
+

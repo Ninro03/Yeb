@@ -2,7 +2,7 @@
 	$('.filter').click(function(){
 		$('.pop').css('display','block');
 	});
-	$('button').click(function(){
+	$('.btn1').click(function(){
 		$('.pop').css('display','none');
 	});
 	
