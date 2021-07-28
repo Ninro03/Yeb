@@ -1,10 +1,8 @@
 ﻿$(function(){
 	
 	a = true;
-	$('.list_box').click(function(){
-		if(a){
-			$('.list_box').hide();			
-			$('.gps_box').stop().animate({'bottom':'386px'},500);
+	$('.f_icon').click(function(){
+		if(a){			
 			$('.f_box').stop().animate({'height':'376px'},500,function(){a=false;});
 		};
 	});
@@ -12,81 +10,59 @@
 	b = true;
 	$('.filter_box').click(function(){
 		if(b){
-			$('.list_box').hide();			
-			$('.gps_box').hide();
 			$('.f_box2').stop().animate({'bottom':'0'},500,function(){b=false;});
-		};
-		if(c==false&&b==true){
-			$('.f_box3').stop().animate({'opacity':'0'},200,function(){c=false;});
-		};			
-		if(a==false&&b==true){
-			$('.list_box').hide();			
-			$('.gps_box').hide();
-			$('.f_box').stop().animate({'opacity':'0'},200,function(){a=false;});
-			$('.f_box3').css('opacity','1');
-		};
-		if(c==false&&b==true){
-			$('.f_box3').stop().animate({'opacity':'0'},200,function(){c=false;});
-		};		
-		if(c==false&&b==false){
-			$('.f_box2').stop().animate({'bottom':'0','opacity':'1'},500,function(){b=false;});
-			$('.f_box3').stop().animate({'bottom':'-68%'},200,function(){b=false;});		
-		};		
+		};	
 	});
 	
 	c = true;
 	$('.time_box').click(function(){
-		if(c){
-			$('.list_box').hide();			
-			$('.gps_box').hide();
+		if(c){			
 			$('.f_box3').stop().animate({'bottom':'0'},500,function(){c=false;});
 		};
-		if(a==false&&c==true){
-			$('.list_box').hide();			
-			$('.gps_box').hide();
-			$('.f_box').stop().animate({'opacity':'0'},500,function(){a=false;});
-			$('.f_box2').css('opacity','1');
-		};	
-		if(b==false&&c==true){
-			$('.f_box2').stop().animate({'opacity':'0'},200,function(){c=false;});		
-		};			
-		if(b==false&&c==false){		
-			$('.f_box3').stop().animate({'bottom':'0','opacity':'1'},500,function(){c=false;});
-			$('.f_box2').stop().animate({'bottom':'-52%'},200,function(){c=false;});		
-		};	
 	});	
 	
 	$('#maps').click(function(){
 		if(a==false){		
-			$('.gps_box').stop().animate({'bottom':'70px'},500);
 			$('.f_box').stop().animate({'height':'47px'},500,function(){
-				a=true;
-				$('.list_box').css('display','block');
-			});	
+				a=true;});	
 		};
 		if(b==false){
-			$('.gps_box').css('display','block');	
-			$('.f_box2').stop().animate({'bottom':'-52%'},500,function(){
-				b=true;
-				$('.list_box').css('display','block');
-			});
+			$('.f_box2').stop().animate({'bottom':'-52%'},500,function(){b=true;});
 		};		
 		if(c==false){		
-			$('.gps_box').css('display','block');	
-			$('.f_box3').stop().animate({'bottom':'-68%'},500,function(){
-				c=true;
-				$('.list_box').css('display','block');
-			});
+			$('.f_box3').stop().animate({'bottom':'-68%'},500,function(){c=true;});
 		};
-		if(a==false&&b==false){
-			$('.f_box').css('opacity','1');
-		};
-		if(a==false&&c==false){
-			$('.f_box').css('opacity','1');
-		};
-		if(b==false&&c==false){
-			$('.f_box2').css('opacity','1');
-			$('.f_box3').css('opacity','1');
-		};
-	});		
+	});	
+
+	var filter = $('.f_box2 fieldset');
+	filter.each(function(){
+		var t = $(this);
+		t.find("input:checkbox").on('click',function(){
+			if($(this).prop('checked')){
+				var tg = $(this);
+				var label = $(this).next();
+				label.addClass('on');
+			}
+			else{
+				var label = $(this).next();
+				label.removeClass('on');
+			};
+		});
+	});
+	
+	var time = $('.f_box3 fieldset');
+	time.each(function(){
+		var t = $(this);
+		t.find("input:checkbox").on('click',function(){
+			if($(this).prop('checked')){
+				var tg = $(this);
+				var label = $(this).next();
+				label.addClass('on');
+			}
+			else{
+				var label = $(this).next();
+				label.removeClass('on');
+			};
+		});
+	});	
 });

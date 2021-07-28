@@ -4,31 +4,22 @@
 #maps{width: 411px; height: 684px; margin-left: -205.5px; position: absolute; top: 0%; left: 50%; z-index: 1;}
 
 /* h_menu */
-.h_menu{width: 100%; height: 50px; position: relative; top: 45px; z-index: 1;} 
-.h_menu > *{position: absolute;}
+.h_menu{width: 100%; height: 50px; position: absolute; bottom: 65px; z-index: 1;} 
+.h_menu > *{position: absolute;} 
 .search_box{top: 2px; left: 13px;}
 .search_box .search{width: 193px; height: 45px; border: 0px; border-radius: 50px; padding-left: 60px; background: #ffffff url(../img/serch_icon.png) no-repeat; background-position: 11px 14px; font-size: 19px; color: #808080;}
 .search_icon{width: 47px; height: 47px; border: 0; border-radius: 0px 23px 23px 0px; background: url(../img/search_arrow.png) no-repeat center; position: absolute; top: 0px; right: 0px; cursor: pointer;}
-.time_box{width: 45px; height: 45px; border-radius: 50px; background-color: #ffffff; top: 2px; right: 83px;}
+.time_box{width: 45px; height: 45px; border-radius: 50px; background-color: #ffffff; top: 2px; right: 83px; z-index: 1;}
 .time_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; background: url(../img/date_icon.png) no-repeat center; cursor: pointer;}
-.filter_box{width: 45px; height: 45px; border-radius: 50px; background-color: #ffffff; top: 2px; right: 20px;}
+.filter_box{width: 45px; height: 45px; border-radius: 50px; background-color: #ffffff; top: 2px; right: 20px; z-index: 1;}
 .filter_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; background: url(../img/equalizer.png) no-repeat center; cursor: pointer;}
 
-/* gps_box */
-.gps_box{width: 46px; height: 46px; background: #ffffff; position: absolute; bottom: 70px; left: 17px; z-index: 1;}
-.gps_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; background: url(../img/gps.png) no-repeat center; cursor: pointer;}
-
-/* list_box */
-.list_box{width: 101px; height: 28px; background: #ffffff; border-radius: 50px; position: absolute; bottom: 65px; right: 155px; z-index: 999999;}
-.list_icon{width: 100%; height: 100%; border: 0; border-radius: 50px; cursor: pointer; background: #ffffff;}
-.list_icon .line_box{width: 20px; height: 20px; margin-left: 11px;  float: left;}
-.list_icon .line_box .line{width: 10px; height: 1px; display: block; background: #333333; margin: 4px auto;}
-.list_icon p{font-size: 15px; margin-top: -2px; float: left;}
-
 /* f_box */
-.f_box{width: 100%; height: 47px; background-color: #ffffff; position: absolute; bottom: 0; overflow: hidden; z-index: 1;}
-.f_box .f_icon{width: 126px; height: 47px; background: url(../img/bottom_arrow.png) no-repeat right 23px;}
-.f_box .f_icon p{font-size: 16px; letter-spacing: -1px; text-align: center;}
+.f_box{width: 100%; height: 47px; text-align: center; background-color: #ffffff; position: absolute; bottom: 0; overflow: hidden; z-index: 1;}
+.f_box .f_icon{height: 47px;}
+.f_icon .line_box{width: 20px; height: 20px; float: left;}
+.f_icon .line_box .line{width: 10px; height: 1px; display: block; background: #333333; margin: 4px auto;}
+.f_icon p{font-size: 15px; margin-top: -2px; float: left;}
 .f_box .list_contents{width: 100%; height: 100%;}
 .f_box .list_contents ul{position: relative;}
 .f_box .list_contents ul li a{width: 100%; height: 141px; border-top: 1px solid #e0dddd;}

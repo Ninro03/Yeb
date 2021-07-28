@@ -1,0 +1,2 @@
+﻿.point{position: relative; left: 17px; margin-top: -1px; width: 0; height: 0; border-width: 8px 5px 0; border-style: solid; border-color: #7b4ce0  transparent transparent;}
+.point:after{content: ""; width: 0; height: 0; border-width: 6px 4px 0; border-style: solid; border-color: #fff transparent transparent; position: absolute; top: -8px; left: 50%; transform: translateX(-50%);}
