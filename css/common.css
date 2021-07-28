@@ -15,7 +15,7 @@ button{border:0 none; background-color:transparent; cursor:pointer}
 
 
 
-body{width: 100%; height: auto; margin: auto 0 ; background: url(../reservation/img/bg/bg2.png) no-repeat top center;}
+body{width: 100%; height: auto; margin: auto 0;}
 #wrap{width: 411px; margin: 0 auto 25px;}
 header{position: relative; width: 411px; height: 50px; margin: 0 auto;}
 section{position: relative; width: 411px; margin: 0 auto; overflow: hidden;}
