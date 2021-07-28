@@ -1,0 +1,44 @@
+﻿body{width: 100%; margin: 0 auto;}
+#wrap{width: 411px; height: 731px; margin: 0 auto 25px;}
+header{position: relative; width: 411px; height: 50px; margin: 0 auto;}
+section{position: relative; width: 411px; margin: 0 auto; overflow: hidden;}
+footer{position: fixed; bottom: 0; width:411px; margin: 0 auto;}
+
+/*------------------------- header -------------------------*/
+#h_menu{width: 50px; height: 50px; padding-top: 10px; cursor: pointer; box-sizing: border-box;}
+#h_menu span{display: block; width: 25px; height: 2px; background: #333333; margin: 6px auto;}
+
+
+
+/*------------------------- section -------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------- footer -------------------------*/
+#f_menu{width: 100%; height: 60px; border-top: 1px solid #dddddd; background: #ffffff;}
+#f_menu ul{width: 100%; height: 100%;}
+#f_menu ul li{float: left; width: 25%; height: 100%; text-align: center;}
+#f_menu ul li a{height: 100%; padding-top: 34px; font-size: 0.9em;  box-sizing: border-box;}
+#f_menu ul li:nth-child(1) a{background: url(../img/home.png) center 5px no-repeat;}
+#f_menu ul li:nth-child(2) a{background: url(../img/calendar.png ) center 5px no-repeat;}
+#f_menu ul li:nth-child(3) a{background: url(../img/cummunity.png) center 5px no-repeat;}
+#f_menu ul li:nth-child(4) a{background: url(../img/user.png) center 5px no-repeat;}
+#f_menu ul li.on:nth-child(1) a{background: url(../img/home_on.png) center 5px no-repeat; color: #00C0C0;}
+#f_menu ul li.on:nth-child(2) a{background: url(../img/calendar_on.png ) center 5px no-repeat; color: #00C0C0;}
+#f_menu ul li.on:nth-child(3) a{background: url(../img/cummunity_on.png) center 5px no-repeat; color: #00C0C0;}
+#f_menu ul li.on:nth-child(4) a{background: url(../img/user_on.png) center 5px no-repeat; color: #00C0C0;}

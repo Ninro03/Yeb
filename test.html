@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+	<title>오픈페이지</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script language="javascript">
+	<!--
+	/*오픈페이지의 닫기를 클릭햇을 때 실행되는 자바스크립트.
+	오픈 페이지에 있는 체크박스에 체크가 되어있는지의 유무에 따라 쿠키를 부여*/
+	function check(){
+		//체크박스에 체크를 했다면 test_cookie라는 이름의 쿠키를 생성한 후에 페이지를 닫는다
+		if(document.form1.checkbox1.checked){
+			SetCookie('test_cookie','1');
+			self.close();
+		}
+		//체크없이 닫기만 눌렀다면 아무런 변화없이 페이지만 닫느다
+		else{
+			self.close();
+		}
+	}
+	//위에서 설정한 이름과 값으로 쿠키 생성
+	function SetCookie(sName, sValue){
+		document.cookie = sName + "=" + escape(sValue);
+	}
+	//-->
+	</script>
+</head>
+<body bgcolor="#ffffff">
+	<form name="form1" method="post">
+		<input type="checkbox" name="checkbox1" value="checked">이 창을 다시 보지 않기.
+
+</body>
+</html>

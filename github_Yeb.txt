@@ -1,0 +1,45 @@
+
+상위 폴더에서 
+프로젝트 폴더를 만들지 않고 상위 폴더 ex)htdocs/php 에서 git bash를 선택
+
+
+처음 부터 하거나 git add . 부터 하거나
+
+git config --global user.email "hayoung0295@gmail.com"	아이디연결
+git config --global user.name "hayoung9835"			이름연동
+git clone -b 브런치명 --single-branch 깃허브주소(원격저장소주소)
+
+
+ex) git clone -b hayoung --single-branch https://github.com/hayoung9835/Yeb => 깃허브(원격저장소)에서 로컬저장소로 branch hayoung만을 가져옴
+
+-다시 시작할때
+git init						.git 생성
+git config --global user.email "hayoung0295@gmail.com"	아이디연결
+git config --global user.name "hayoung9835"		이름연동
+git remote add origin http://github.com/Ninro03/Yeb.git	원격저장소연동
+
+git branch					branch 목록확인
+git checkout (hayoung/qjagml/wlsdud/master)		branch 전환
+
+
+-평소에
+git init
+git remote -v
+git add . 						전체 올리기(로컬)
+git add 파일명.확장자 ex) git add login		선택파일만올리기(로컬)
+git status						올린 상태확인
+git commit -m "오늘 한 일"				올릴 파일의 간단한 내용설명
+git push -u origin hayoung	저장소에 올리기
+
+
+
+git remote -v					연결된저장소확인
+git branch (원하는 이름)				branch생성
+git log						지금까지 올린 기록 확인
+
+
+https://tagilog.tistory.com/377
+https://evan-moon.github.io/2019/07/25/git-tutorial/
+https://dsc-sookmyung.tistory.com/24 -> github에서 코드리뷰
+https://velog.io/@think2wice/Github-%EB%B6%84%EB%AA%85-commit%EC%9D%84-%ED%96%88%EB%8A%94%EB%8D%B0-%EC%99%9C-contribution-%EA%B7%B8%EB%9E%98%ED%94%84%EB%8A%94-%EC%95%88%EC%B1%84%EC%9B%8C%EC%A7%80%EC%A7%80
+깃허브 contribution 반드시 확인

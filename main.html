@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>main</title>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/DB_springMove_fn.js"></script>		
+	<script src="js/jquery.easing.1.3.min.js"></script>	
+	<script language="javascript">
+
+	</script>	
+</head>
+<body>
+	<div id="wrap">
+		<div class="pop">
+			<div class="popup">
+				<div class="slide">
+					<div class="pop_btn">
+						<form name="form1" method="post">
+							<input type="checkbox" name="checkbox1" value="checked">&nbsp;&nbsp;이 창을 다시 보지 않기
+						</form>
+					</div>
+					<button><img src="img/close_small.png" width="25"alt=""/></button>
+					<img src="img/bar.png" width="300" alt="bar" class="bar"/>
+					<img src="img/click2.png" width="50" alt="click" class="click_1"/>
+					<img src="img/popup_text1.png" alt="" class="popup_text1"/>
+					<img src="img/popup_text2.png" alt="" class="popup_text2"/>
+					<img src="img/popup_text3.png" alt="" class="popup_text3"/>
+					<div class="popup_text4">
+						<img src="img/popup_text4.png" alt="" />
+					</div>
+					<img src="img/popup_text5.png" alt="" class="popup_text5"/>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div id="header" class="cf">
+				<div id="h_menu" class="fl">
+					<h1 class="hidden">h_menu</h1>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<button class="map_btn fr" type="button" onClick="location.href='../map.html';">
+					<h2 class="hidden">map_btn</h2>
+				</button>
+			</div>
+		</header>
+		<section>
+			<div id="section">
+				<div class="content1">
+					<h2>예약하러가기 <span class="arrow"><img src="img/right_arrow.png" alt="right_arrow"/></span></h2>
+					<ul class="main_slide bxslider">
+						<li><a href="#"><img src="img/slide_01.jpg" alt="slide_img1"/><span class="area">서울</span><span class="place">용왕산배드민턴장</span></a></li>
+						<li><a href="#"><img src="img/slide_01.jpg" alt="slide_img1"/><span class="area">경기</span><span class="place">용왕산배드민턴장</span></a></li>
+						<li><a href="#"><img src="img/slide_01.jpg" alt="slide_img1"/><span class="area">안양</span><span class="place">용왕산배드민턴장</span></a></li>
+					</ul>
+				</div>
+				<div class="content2">
+					<ul class="lolling">
+						<li class="first"><img src="img/banner.png" alt="notice_banner"/></li>
+						<li><img src="img/banner.png" alt="notice_banner"/></li>
+						<li><img src="img/banner.png" alt="notice_banner"/></li>
+					</ul>
+				</div>
+				<div class="content3">
+					<h2>매치하기 <span class="arrow"><img src="img/right_arrow.png" alt="right_arrow"/></span></h2>				
+					<div id="match">
+						<div class="s_tab">
+							<ul class="cf">
+								<li class="act"><a href="">서울</a></li>
+								<li><a href="">경기인천</a></li>
+								<li><a href="">강원</a></li>
+								<li><a href="">충청</a></li>
+								<li><a href="">전라</a></li>
+								<li><a href="">경상</a></li>
+							</ul>
+						</div>
+						<div class="match_list">
+							<ul class="s_list_tab">
+								<li><a href="#" class="cf">
+									<span class="list_tit">
+										용왕산 배드민턴장 3코트 / 주차가능
+									</span>
+									<span class="list_stit">
+										<span class="gender">남여모두</span>
+										<span>·</span>
+										<span class="personnel">4~8인</span>
+										<span>·</span>
+										<span class="level">D조</span>
+									</span>
+										<button type="button" onClick="location.href='../attend.html'">신청가능</button>
+								</a></li>
+								<li><a href="#" class="cf">
+									<span class="list_tit">
+										반포 배드민턴장 2코트 / 주차불가
+									</span>
+									<span class="list_stit">
+										<span class="gender">남성</span>
+										·
+										<span class="personnel">4~8인</span>
+										·
+										<span class="level">A~B조</span>
+									</span>
+									<button type="button" onClick="location.href='../attend.html'">마감임박</button>
+								</a></li>
+								<li><a href="#" class="cf">
+									<span class="list_tit">
+										마포구민체육센터 2,3코트 / 주차가능
+									</span>
+									<span class="list_stit">
+										<span class="gender">남여모두</span>
+										·
+										<span class="personnel">8~16인</span>
+										·
+										<span class="level">C~D조</span>
+									</span>
+									<button type="button" onClick="location.href='../attend.html'">신청가능</button>
+								</a></li>
+								<li><a href="#" class="cf">
+									<span class="list_tit">
+										송파 배드민턴장 7코트 / 주차가능
+									</span>
+									<span class="list_stit">
+										<span class="gender">여성</span>
+										·
+										<span class="personnel">4~8인</span>
+										·
+										<span class="level">A조</span>
+									</span>
+									<button type="button" onClick="location.href='../attend.html'">마감</button>
+								</a></li>
+							</ul>
+							<ul class="s_list_tab">
+								<li><a href="#" class="cf">
+									<span class="list_tit">
+										용용용 배드민턴장 3코트 / 주차가능
+									</span>
+									<span class="list_stit">
+										<span class="gender">남여모두</span>
+										<span>·</span>
+										<span class="personnel">4~8인</span>
+										<span>·</span>
+										<span class="level">D조</span>
+									</span>
+										<button type="button" onClick="location.href='../attend.html'">신청가능</button>
+								</a></li>
+								<li><a href="#" class="cf">
+									<span class="list_tit">
+										반포 배드민턴장 2코트 / 주차불가
+									</span>
+									<span class="list_stit">
+										<span class="gender">남성</span>
+										·
+										<span class="personnel">4~8인</span>
+										·
+										<span class="level">A~B조</span>
+									</span>
+									<button type="button" onClick="location.href='../attend.html'">마감임박</button>
+								</a></li>
+								<li><a href="#" class="cf">
+									<span class="list_tit">
+										마포구민체육센터 2,3코트 / 주차가능
+									</span>
+									<span class="list_stit">
+										<span class="gender">남여모두</span>
+										·
+										<span class="personnel">8~16인</span>
+										·
+										<span class="level">C~D조</span>
+									</span>
+									<button type="button" onClick="location.href='../attend.html'">신청가능</button>
+								</a></li>
+								<li><a href="#" class="cf">
+									<span class="list_tit">
+										마포구민체육센터 2,3코트 / 주차가능
+									</span>
+									<span class="list_stit">
+										<span class="gender">남여모두</span>
+										·
+										<span class="personnel">8~16인</span>
+										·
+										<span class="level">C~D조</span>
+									</span>
+									<button type="button" onClick="location.href='../attend.html'">신청가능</button>
+								</a></li>
+							</ul>
+						</div>
+					</div>				
+				</div>
+				<div class="content4">
+					<h3>대회일정 <span class="arrow"><img src="img/right_arrow.png" alt="right_arrow"/></span></h3>
+					<ul class="schedule_slide">
+						<li class="first"><a href="#"><img src="img/sumnail_01.jpg" alt="competition_img1"/></a></li>
+						<li><a href="#"><img src="img/sumnail_01.jpg" alt="competition_img1"/></a></li>
+						<li><a href="#"><img src="img/sumnail_01.jpg" alt="competition_img1"/></a></li>
+						<li><a href="#"><img src="img/sumnail_01.jpg" alt="competition_img1"/></a></li>
+					</ul>		
+					<ul class="button_list cf">
+						<li><span class="color">1</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div id="footer">
+				<h3 class="f_logo"><img src="img/f_logo.png" alt="f_logo"/></h3>
+				<ul class="f_terms cf">
+					<li>이용약관</li>
+					<li><span class="line"></span></li>
+					<li><b>개인정보처리방침</b></li>
+					<li><span class="line"></span></li>
+					<li>사업자 정보 확인</li>
+				</ul>
+				<div class="address">
+					<p>Yeb<span class="line"></span>경기도 안양시 만안구 안양로 303 안양메쎄타워 2층</p>
+					<p>contact03@yebminton.com</p>
+					<p>사업자번호 : 333-33-33333<span class="line"></span>대표남최안</p>
+				</div>
+				<div class="copy">
+					<p>Copyright Yeb All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<div id="f_menu">
+			<ul class="cf">
+				<li class="on"><a href="../index.html">홈</a></li>
+				<li><a href="../index.html">예약</a></li>
+				<li><a href="../index.html">커뮤니티</a></li>
+				<li><a href="../index.html">내정보</a></li>
+			</ul>
+		</div>	
+		<div id="sidebar">
+			<div class="sidebar_inner">
+				<div class="login_box">
+					<a href="#" class="cf"><img src="img/profile.png" alt="login_icon"/><span class="text">로그인하기</span><span class="arrow"><img src="img/right_arrow.png" alt="right_arrow"/></span></a>
+				</div>
+ 				<ul class="list1">
+					<li><a href="cummunity/cummunity.html">나의 예약</a></li>
+					<li><a href="#">나의 게시물</a></li>
+					<li><a href="#">나의 대화</a></li>
+					<li><a href="#">대회일정</a></li>
+				</ul>
+				<ul class="list2">
+					<li><a href="#">공지사항 <span class="new"><img src="img/new.png" alt="new_icon"/></span></a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">설정</a></li>
+				</ul>
+				<div class="s_banner">
+					<img src="img/s_banner.png" alt="s_banner"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

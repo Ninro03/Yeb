@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7w1cs2xdu7&amp;submodules=panorama,geocoder,drawing,visualization"></script>	
+	<title>maps</title>
+	<link rel="stylesheet" href="css/map.css"/>
+	 <script type="text/javascript" src=" http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script>
+	 
+	 <script type="text/javascript"> 
+	  function initialize() {
+	   var myLatlng = new google.maps.LatLng(37.399582, 126.938919);
+	   var myOptions = {
+		zoom: 15,
+		center: myLatlng,
+		mapTypeId: google.maps.MapTypeId.TERRAIN
+	   }
+	   var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	   var marker = new google.maps.Marker( {
+		position: myLatlng, 
+		map: map, 
+		title:""
+	   });   
+	   var infowindow = new google.maps.InfoWindow( {
+		content: "경기 안양시 만안구 안양로 303"
+	   });
+	   infowindow.open(map,marker);
+	  }
+	  window.onload=function() {
+	   initialize();
+	  }
+	  
+
+	 </script> 	
+</head>
+<body>
+ <div id="map">
+	<div class="h_menu">
+		<div class="search_box">
+			<input type="text" class="search" value="장소 주소 검색"/>
+			<button class="search_icon"></button>
+		</div>
+ 		<div class="time_box">
+			<button class="time_icon"></button>
+		</div>
+		<div class="filter_box">
+			<button class="filter_icon"></button>
+		</div>	 
+	</div>
+	<div class="gps_box">
+		<button class="gps_icon"></button>
+	</div>
+	<div class="list_box">
+		<button class="list_icon cf">
+			<div class="line_box">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+			<p>목록보기</p>
+		</button>
+	</div>
+	<div class="f_box">
+		<button class="f_icon"><p>현재 지도 중심</p></button>
+		<div class="list_contents">
+			<ul>
+				<li>
+					<a href="#">
+						<span class="title">호계다목적체육관</span>
+						<span class="star">
+							<img src="img/star.png" alt="star_icon"/>
+							4.1
+							<span class="color">(19)</span>
+						</span>
+ 						<span class="price">1인당￦1,500</span>
+						<span class="reserve">즉시예약</span>
+						<span class="thumb">
+							<img src="img/court1.png" alt="코트 썸네일"/>
+						</span>
+					<span class="content">평일 09:00~24:00 토요일 09:00~24:00 일요일 09:00~22:00</span>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="#">
+						<span class="title">군포시민체육관장제3체육관</span>
+						<span class="star">
+							<img src="img/star.png" alt="star_icon"/>
+							4.1
+							<span class="color">(19)</span>
+						</span>
+ 						<span class="price">1인당￦1,500</span>
+						<span class="reserve">즉시예약</span>
+						<span class="thumb">
+							<img src="img/court1.png" alt="코트 썸네일"/>
+						</span>
+					<span class="content">평일 06:00~22:00 주말 06:00~22:00 첫째/셋째 월요일 휴관</span>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="#">
+						<span class="title">청계 배드민턴장</span>
+						<span class="star">
+							<img src="img/star.png" alt="star_icon"/>
+							4.1
+							<span class="color">(19)</span>
+						</span>
+ 						<span class="price">1인당￦1,500</span>
+						<span class="reserve">즉시예약</span>
+						<span class="thumb">
+							<img src="img/court1.png" alt="코트 썸네일"/>
+						</span>
+					<span class="content">평일 09:00~24:00 토요일 09:00~24:00 일요일 09:00~22:00</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="f_box2">
+		<form action="#">
+			<fieldset class="field1">
+				<legend>실내 바닥 종류</legend>
+				<input type="checkbox" id="ch1"/><label for="ch1" class="ch1">마루</label>
+				<input type="checkbox" id="ch2"/><label for="ch2" class="ch2">합성PU</label>
+				<input type="checkbox" id="ch3"/><label for="ch3" class="ch3">우레탄</label>
+			</fieldset>
+			<div class="line"></div>
+			<fieldset class="field2">
+				<legend>편의시설</legend>
+				<input type="checkbox" id="ch4"/><label for="ch4" class="ch4">주차</label>
+				<input type="checkbox" id="ch5"/><label for="ch5">샤워실</label>
+				<input type="checkbox" id="ch6"/><label for="ch6">탈의실</label>
+				<input type="checkbox" id="ch7"/><label for="ch7">흡연장</label>
+			</fieldset>
+			<div class="line"></div>
+			<fieldset class="field3">
+				<legend>기타</legend>
+				<input type="checkbox" id="ch8"/><label for="ch8">거트</label>
+				<input type="checkbox" id="ch9"/><label for="ch9">레슨</label>
+				<input type="checkbox" id="ch10"/><label for="ch10" class="ch10">물품 대여</label>
+			</fieldset>
+			<input type="button" class="submit" value="적용하기"/>
+		</form>
+	</div>
+</div> 
+ 	<article>
+ 	 <section id="content2">  
+ 	  <div id="map_canvas" style="height:700px;"></div>
+ 	 </section>
+ 	</article>
+ </div>
+</body>
+</html>
