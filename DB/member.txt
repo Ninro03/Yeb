@@ -12,9 +12,24 @@ create table members (
 	primary key(num)
 );
 
+create table center (
+	num int not null auto_increment,
+	area char(5) not null,
+	name char(15) not null,
+	court char(2) not null,
+	parking char(4),
+	light char(1),
+	floor char(4),
+	shower char(1),
+	fitting char(1),
+	smoking char(1)
+);
+
 create table reservation (
 	num int not null auto_increment,
+	id char(15) not null,
 	s_center char(15) not null,
+	month char(2) not null,
 	date char(1) not null,
 	d_week char(1) not null,
 	time char(10) not null,
