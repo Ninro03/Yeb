@@ -1,14 +1,27 @@
 ﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<title>Member</title>
 	<link rel="stylesheet" href="css/member.css"/>
 	<script src="js/jquery-1.12.1.min.js"></script>
-	<script src="js/script.js"></script>
-	<script>
-		
+	<script type="text/javascript">
+
+		function check()
+		{
+			if (!document.getElementById('cb1').checked)
+			{
+				alert("서비스 이용약관 및 개인 정보 수집 및 이용에 동의해주세요.");
+				document.getElementById('cb1').focus();
+				return false;
+			}
+
+				  
+		}
+
 	</script>
+
 </head>
 <body>
 	<div id="wrap">
@@ -20,7 +33,7 @@
 		<section>
 			<div id="member">
 				<h2>회원가입</h2>
-				<form action="login.php" method="post" class="cf">
+				<form action="login.html" method="post" class="cf" onsubmit="return check()">
 					<input type="text" name="id" placeholder="이메일을 입력하세요."/>
 					<input type="password" name="pass" placeholder="비밀번호를 입력하세요."/>
 					<input type="password" name="pass" placeholder="비밀번호를 한번 더 입력하세요."/>
@@ -95,15 +108,13 @@
 						<option value="31">31</option>	
 					</select>		
 					<div class="agree_wrap">
-						<span class="option"><input type="checkbox" name="agree" value="1" id="agree"><label for="agree"></label><div class="agree_text">
-							Yeb <span class="puple">서비스 이용약관</span> 및 <span class="puple">개인 정보 수집 및 이용</span>에 동의 합니다.</span>
+						<div class="agree_text">
+							<label for="cb1"><input type="checkbox" id="cb1">Yeb <span class="puple">서비스 이용약관</span> 및 <span class="puple">개인 정보 수집 및 이용</span>에 동의 합니다.</label>
 						</div>
-					</div>
-					<!-- <button>닫기</button> -->
-					<button type="submit" onclick="check_input()">회원가입</button>
-				</form>
+						<button type="submit" value="버튼">회원가입</button>
+					</div>			
 				<div class="gray_line"></div>
-				<div class="bottom_text"><a href="#">이미 아이디가 있다면 여기에서 로그인 하세요.</a></div>
+				<div class="bottom_text"><a href="login.html">이미 아이디가 있다면 여기에서 로그인 하세요.</a></div>
 			</div>
 		</section>
 		<footer>
