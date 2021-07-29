@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html> 
+<html> 
+  
+<body> 
+  
+  <h4> 
+      Change the text of the text field  
+      ,and then click the button. 
+  </h4> 
+  
+ <input type="text" id="domTextElement1" > 
+  
+  <label for="domTextElement">Name: </label>
+  <input type="text" class="domTextElement2" > 
+  
+  <button type="button"  onclick="getValueInput()"> 
+      click me!! 
+  </button> 
+  
+  <p id="valueInput"></p> 
+
+  <script> 
+
+    const getValueInput = () =>{
+      let inputValue1 = document.querySelector("#domTextElement1").value; 
+      let inputValue2 = document.querySelector(".domTextElement2").value; 
+      document.querySelector("#valueInput").innerHTML = `First input value: ${inputValue1} Second Input Value: ${inputValue2}`; 
+    }
+    
+  </script> 
+</body> 
+  
+</html> 
