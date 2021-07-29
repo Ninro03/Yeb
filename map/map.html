@@ -7,6 +7,7 @@
 	<title>maps</title>
 	<link rel="stylesheet" href="../css/common.css"/>
 	<link rel="stylesheet" href="css/map.css"/>
+	<link rel="stylesheet" href="css/test.css"/>
 	<script src="../js/jquery-1.9.1.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
@@ -141,12 +142,15 @@
 </div>
 <script>
 var HOME_PATH = window.HOME_PATH || '.';
-var position = new naver.maps.LatLng(37.399582, 126.938919);
+var position = new naver.maps.LatLng(37.370735198284244, 126.98179778482212);
+var position1 = new naver.maps.LatLng(37.38031088768779, 126.94695438449426);
+var position2 = new naver.maps.LatLng(37.3394433708554, 126.93663361133514);
+var position3 = new naver.maps.LatLng(37.3867938496316, 126.9985157691537);
 
 // 네이버 맵 생성
 var mapOptions = {
     center: position,
-    zoom: 17
+    zoom: 12
 };
 let map = new naver.maps.Map('maps', mapOptions);
  
@@ -162,41 +166,42 @@ function resize(){
     var Size = new naver.maps.Size(mapWidth, mapHeight);
     map.setSize(Size);
 }
-var defaultMarker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.399582, 126.938919),
+var Marker1 = new naver.maps.Marker({
+    position: position1,
     map: map,
     icon: {
-        content: '<img src="'+ HOME_PATH +'/img/mark.png" alt="" ' +
-                 'style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; ' +
-                 '-webkit-user-select: none; position: absolute; width: 34px; height: 34px; left: 0px; top: 0px;">',
+        content: '<div class="pin_wrap"><div class="pin_body"><div class="pin_box"><div class="pin_img"><img src="'+ HOME_PATH +'/img/marker.png" alt="marker_icon"/></div><div class="pin_txt"><div class="pin_tit"><span>호계다목적체육관</span></div><div class="pin_sub"><span class="review"><img src="img/star.png" width="8px" alt="star_icon"/>4.6</span><span class="subject">귀인로 80번길 52</span></div></div></div></div><div class="pin_footer"></div></div>',
         size: new naver.maps.Size(34, 34),
 		origin: new naver.maps.Point(0, 0),
         anchor: new naver.maps.Point(17, 17)
     }
 });
-var contentString = [
-        '<div style="padding:4px 4px;">',
-        '   <div style="font-weight:bold;padding-bottom:3px; color:#333333;">계명대출판부</div>',
-        '</div>'
-    ].join('');
- 
-var infowindow = new naver.maps.InfoWindow({
-    content: contentString
-});
- 
-naver.maps.Event.addListener(defaultMarker, "click", function(e) {
-    if (infowindow.getMap()) {
-        infowindow.close();
-    } else {
-        infowindow.open(map, defaultMarker);
+var Marker2 = new naver.maps.Marker({
+    position: position2,
+    map: map,
+    icon: {
+        content: '<div class="pin_wrap"><div class="pin_body"><div class="pin_box"><div class="pin_img"><img src="'+ HOME_PATH +'/img/marker.png" alt="marker_icon"/></div><div class="pin_txt"><div class="pin_tit"><span>군포시민체육관</span></div><div class="pin_sub"><span class="review"><img src="img/star.png" width="8px" alt="star_icon"/>4.6</span><span class="subject">군포로 339</span></div></div></div></div><div class="pin_footer"></div></div>',
+        size: new naver.maps.Size(34, 34),
+		origin: new naver.maps.Point(0, 0),
+        anchor: new naver.maps.Point(17, 17)
     }
 });
- 
-infowindow.open(map, defaultMarker);
+var Marker3 = new naver.maps.Marker({
+    position: position3,
+    map: map,
+    icon: {
+        content: '<div class="pin_wrap"><div class="pin_body"><div class="pin_box"><div class="pin_img"><img src="'+ HOME_PATH +'/img/marker.png" alt="marker_icon"/></div><div class="pin_txt"><div class="pin_tit"><span>청계 배드민턴장</span></div><div class="pin_sub"><span class="review"><img src="img/star.png" width="8px" alt="star_icon"/>4.6</span><span class="subject">청계동 820-1</span></div></div></div></div><div class="pin_footer"></div></div>',
+        size: new naver.maps.Size(34, 34),
+		origin: new naver.maps.Point(0, 0),
+        anchor: new naver.maps.Point(17, 17)
+    }
+});
 
 
-defaultMarker.setTitle('그린컴퓨터 안양지점');
-defaultMarker.setDraggable(true);
+
+
+
+
 </script>
 </body>
 </html>

@@ -7,6 +7,7 @@
 	<title>maps</title>
 	<link rel="stylesheet" href="../css/common.css"/>
 	<link rel="stylesheet" href="css/map.css"/>
+	<link rel="stylesheet" href="css/test.css"/>
 	<script src="../js/jquery-1.9.1.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
@@ -15,8 +16,8 @@
 <div id="map">
 	<div class="h_menu">
 		<div class="search_box">
-			<input type="text" class="search" value="장소 주소 검색"/>
-			<button class="search_icon"></button>
+			<input type="text" class="search" id="search" placeholder="장소 주소 검색"/>
+			<button type="submit" class="search_icon"></button>
 		</div>	 
 		<div class="time_box">
 			<button class="time_icon"></button>
@@ -141,50 +142,69 @@
 </div>
 <script>
 var HOME_PATH = window.HOME_PATH || '.';
-var nuriPoint = new naver.maps.LatLng(37.5795423, 126.8897844);
-var sbsPoint = new naver.maps.LatLng(37.579847, 126.8929304);
-var middlePoint = new naver.maps.LatLng((37.5795423 + 37.579847) / 2, (126.8897844 + 126.8929304) / 2);
-var map = new naver.maps.Map('map', {
-	center: middlePoint,
-	zoom: 11,
-	enableWheelZoom: true,
-	enableDragPan: true,
-	enableDblClickZoom: false,
-	mapMode: 0,
-	activateTrafficMap: false,
-	activateBicycleMap: false,
-	minMaxLevel: [1, 14],
-	zoomControl: true,
-	zoomControlOptions: {
-		position: naver.maps.Position.TOP_RIGHT
-	}
+var position = new naver.maps.LatLng(37.370735198284244, 126.98179778482212);
+var position1 = new naver.maps.LatLng(37.38031088768779, 126.94695438449426);
+var position2 = new naver.maps.LatLng(37.3394433708554, 126.93663361133514);
+var position3 = new naver.maps.LatLng(37.3867938496316, 126.9985157691537);
+
+// 네이버 맵 생성
+var mapOptions = {
+    center: position,
+    zoom: 12
+};
+let map = new naver.maps.Map('maps', mapOptions);
+ 
+// 네이버 맵 크기조정
+window.addEventListener('DOMContentLoaded', function(){
+    resize();
+    window.addEventListener('resize', resize);
 });
-new naver.maps.Marker({
-	position: nuriPoint,
-	icon: {
-		content: '<div style="width:100px;"><img src="http://static.naver.net/maps/v3/pin_default.png" alt="" ' +
-		'style="margin: 0; padding: 0; border: 0 solid transparent; display: block; max-width: none; ' +
-		'max-height: none; -webkit-user-select: none; position: absolute; width: 22px; height: 35px; left: 0; top: 0;"/>' +
-		'<div style="position: absolute; top: 40px; left: -60px; color: darkcyan; font-weight: bold; font-size: 15px;">상암 누리꿈 스퀘어</div></div>',
-		size: new naver.maps.Size(28, 37),
-		anchor: new naver.maps.Point(11, 35)
-	},
-	map: map
+ 
+function resize(){
+    var mapWidth = document.getElementById('maps').offsetWidth;
+    var mapHeight = document.getElementById('maps').offsetHeight;
+    var Size = new naver.maps.Size(mapWidth, mapHeight);
+    map.setSize(Size);
+}
+var Marker1 = new naver.maps.Marker({
+    position: position1,
+    map: map,
+    icon: {
+        content: '<div class="pin_wrap"><div class="pin_body"><div class="pin_box"><div class="pin_img"><img src="'+ HOME_PATH +'/img/marker.png" alt="marker_icon"/></div><div class="pin_txt"><div class="pin_tit"><span>호계다목적체육관</span></div><div class="pin_sub"><span class="review"><img src="img/star.png" width="8px" alt="star_icon"/>4.6</span><span class="subject">귀인로 80번길 52</span></div></div></div></div><div class="pin_footer"></div></div>',
+        size: new naver.maps.Size(34, 34),
+		origin: new naver.maps.Point(0, 0),
+        anchor: new naver.maps.Point(17, 17)
+    }
+});
+var Marker2 = new naver.maps.Marker({
+    position: position2,
+    map: map,
+    icon: {
+        content: '<div class="pin_wrap"><div class="pin_body"><div class="pin_box"><div class="pin_img"><img src="'+ HOME_PATH +'/img/marker.png" alt="marker_icon"/></div><div class="pin_txt"><div class="pin_tit"><span>군포시민체육관</span></div><div class="pin_sub"><span class="review"><img src="img/star.png" width="8px" alt="star_icon"/>4.6</span><span class="subject">군포로 339</span></div></div></div></div><div class="pin_footer"></div></div>',
+        size: new naver.maps.Size(34, 34),
+		origin: new naver.maps.Point(0, 0),
+        anchor: new naver.maps.Point(17, 17)
+    }
+});
+var Marker3 = new naver.maps.Marker({
+    position: position3,
+    map: map,
+    icon: {
+        content: '<div class="pin_wrap"><div class="pin_body"><div class="pin_box"><div class="pin_img"><img src="'+ HOME_PATH +'/img/marker.png" alt="marker_icon"/></div><div class="pin_txt"><div class="pin_tit"><span>청계 배드민턴장</span></div><div class="pin_sub"><span class="review"><img src="img/star.png" width="8px" alt="star_icon"/>4.6</span><span class="subject">청계동 820-1</span></div></div></div></div><div class="pin_footer"></div></div>',
+        size: new naver.maps.Size(34, 34),
+		origin: new naver.maps.Point(0, 0),
+        anchor: new naver.maps.Point(17, 17)
+    }
 });
 
-new naver.maps.Marker({
-	position: sbsPoint,
-	icon: {
-		content: '<div style="width:100px;"><img src="http://static.naver.net/maps/v3/pin_default.png" alt="" ' +
-		'style="margin: 0; padding: 0; border: 0 solid transparent; display: block; max-width: none; ' +
-		'max-height: none; -webkit-user-select: none; position: absolute; width: 22px; height: 35px; left: 0; top: 0;"/>' +
-		'<div style="position: absolute; top: 40px; left: -60px; color: darkcyan; font-weight: bold; font-size: 15px;">상암 SBS 프리즘타워</div></div>',
-		size: new naver.maps.Size(28, 37),
-		anchor: new naver.maps.Point(11, 35)
-	},
-	map: map
+var address = document.getElementById("search").value;
+$('.search_icon').click(function(){
+	$('.search').change(function(){
+		$('.search').val();
+		alert('.search');
+	});
 });
-       
+
 </script>
 </body>
 </html>
