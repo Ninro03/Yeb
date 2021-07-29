@@ -1,0 +1,68 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0; padding: 0; border: 0; font-family: 'Malgun Gothic', sans-serif;}
+
+ul, li{list-style: none;}
+a{text-decoration: none; display: block; color: #777777;}
+.cf:after{content: ''; display: block; clear: both;}
+.fl{float: left;}
+
+
+#wrap{width: 100%; margin: 0 auto;}
+#wrap_inner{width: 411px; height: 1500px; margin: 0 auto; background: #ff0000;}
+ header, section, footer{width: 100%;} 
+
+/* 메뉴 */
+#header{width: 411px; margin: 0 auto; height: 80px;}
+#header h1{width: 180px;}
+#header img{width: 80px;  margin-top: 30px;}
+nav{width: 411px; margin: 0 auto;}
+
+/* 탭메뉴 */
+.tab_wrap{width: 411px; margin: 0 auto;}
+.tab li{float: left; width: 50%; height: 33px;  border: none; height: 28px; color: #777777; padding-top: 6px; font-size: 14px; font-weight: bold; text-align: center; background: #f2f2f2;}
+.tab li.active{background: #00C0C0;}
+.tab li.active a{color: #ffffff;}
+.tab li a{color: #666666;}
+
+.tab_con{position: relative;}
+
+/* 서브텝메뉴 */
+.sub_tab{border-bottom: 1px solid #dddddd; height: 29px; overflow: hidden; padding-left: 10px;}
+.sub_tab li{float: left; height: 31px; width: 33%;}
+.sub_tab li a{display: block; border: none; height: 22px; color: #999999; padding-top: 8px; font-size: 12px; text-align: center;}
+.sub_tab li.active{background: #ffffff;}
+.sub_tab li.active a{color: #00C0C0;}
+.sub_tab li a{color: #666666;}
+
+
+.sub_tab1{border-bottom: 1px solid #dddddd; height: 29px; overflow: hidden; padding-left: 10px;}
+.sub_tab1 li{float: left; height: 31px; width: 33%;}
+.sub_tab1 li a{display: block; border: none; height: 22px; color: #999999; padding-top: 8px; font-size: 12px; text-align: center;}
+.sub_tab1 li.active{background: #ffffff;}
+.sub_tab1 li.active a{color: #00C0C0;}
+.sub_tab1 li a{color: #666666;}
+
+
+
+
+
+/* 헤더 바 */
+#h_bar{width: 411px; height: 64px; margin: 0 auto;}
+.left_arrow{width: 100px;}
+.left_arrow>a{display: block; width: 30px; margin-top: 24px;}
+#h_bar>h3{width: 150px; margin-left: 65px;margin-top: 22px; font-size: 20px;  letter-spacing: -1px; color: #3a3a3a;}
+.refund{font-size: 14px; margin-top: 27px; margin-left: 27px; cursor:pointer; background: #ffffff; border: none;  letter-spacing: -1px; color: #3a3a3a; width: 60px; }
+
+/* 메뉴부분 */
+#reservation{width: 411px; margin: 0 auto;}
+#reservation>h2{display: block; width: 100%; height: 160px; margin: 0 auto; float: left; }
+#reservation>h2>img{display: block; width: 90px; margin: auto; padding-top: 50px;}
+.input_tit{width: 200px; float: left; letter-spacing: -1px; color: #3a3a3a; margin-left: 10px; font-size: 17px; margin-top: 15px;}
+
+
+
+/* 예약 리스트 */
+#list{width: 411px; margin: 0 auto;}
+.sub_con>div{margin: 100px auto; width: 100%; text-align: center; color: #777777;}
+.sub_con1>div{margin: 100px auto; width: 100%; text-align: center; color: #777777;}
+

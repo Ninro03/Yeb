@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>cummunity</title>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/match.css"/>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/match.js"></script>
+</head>
+<body>
+	<div id="wrap">
+
+		<header>
+			<div id="header" class="cf">
+				<div id="h_menu" class="fl">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="filter"><img src="img/filter.png" alt=""/></div>
+			</div>
+		</header>
+		<section>
+			<div class="pop">
+				<div class="popup_content">
+					<div class="popup_inner">
+						<form action="">
+							<div class="reset_button">
+								<input id="reset_img" type="image" src="img/reset_button.png" alt="리셋버튼">
+								<input id="reset" type="reset" alt="제출버튼">
+							</div>
+							<div class="pop_tit">종류</div>
+							<input type="checkbox" id="cb1"/>
+							<label for="cb1">전체</label>
+						
+							<input type="checkbox" id="cb2"/>
+							<label for="cb2">접수기간</label>
+						
+							<input type="checkbox" id="cb3"/>
+							<label for="cb3">대회기간</label>
+							
+							<div class="line"></div>
+							<div class="pop_tit">상태</div>
+							<input type="checkbox" id="cb4"/>
+							<label for="cb4">전체</label>
+						
+							<input type="checkbox" id="cb5"/>
+							<label for="cb5">예정</label>
+						
+							<input type="checkbox" id="cb6"/>
+							<label for="cb6">종료</label>
+							
+							<div class="line"></div>
+							<div class="pop_tit">기간</div>
+							<input type="checkbox" id="cb7"/>
+							<label for="cb7">전체</label>
+						
+							<input type="checkbox" id="cb8"/>
+							<label for="cb8">1주</label>
+						
+							<input type="checkbox" id="cb9"/>
+							<label for="cb9">1개월</label>
+							
+							<input type="checkbox" id="cb10"/>
+							<label for="cb10">직접입력</label>
+							
+							<div class="button">
+								<input type="submit" value="닫기"/ id="close">
+								<label for="close">닫기</label>
+								<input type="submit" value="제출하기" id="submit"/>
+								<label for="submit">제출하기</label>
+							</div>
+						</form>
+				
+					</div>
+				</div>
+			</div>	
+			<div id="contest">
+				<div class="contest_h_box">
+					<div class="contest_tit">현재 진행중인 대회 <span class="purple">1건</span></div>
+				</div>
+				<div class="match_img_small fl">
+					<img src="img/competition_small.png" alt=""/>
+				</div>
+				<div class="match_tit fl cf">
+					<a href="#">2021 전국가을철종배드민턴선수권대회(중고)</a>
+				</div>
+				<div class="match_day fl cf">
+					<span>접수기간 &nbsp;</span> 2021.05.25 ~ 2021.06.01 <br/>
+					<span>대회기간 &nbsp;</span> 2021.06.17 ~ 2021.06.27
+				</div>
+			</div>
+			<div class="search_text">검색결과</div>
+			<div id="search_content">
+				<div class="search_img_small fl">
+					<img src="img/search_content_img.png" alt=""/>
+				</div>
+				<div class="search_tit fl cf">
+					<a href="#">2021 전국 가을 철종 배드민턴<br/>선수권 대회(중고)</a>
+				</div>
+				<div class="search_day fl cf">
+					<p>청송국민체육센터</p>
+					<p><span>접수기간 &nbsp;</span> 2021.05.25 ~ 2021.06.01</p>
+					<p><span>대회기간 &nbsp;</span> 2021.06.17 ~ 2021.06.27</p>
+					<p><span class="like">♥ 2</span></p>
+				</div>				
+			</div><!-- id="search_content" -->
+			<div id="search_content">
+				<div class="search_img_small fl">
+					<img src="img/search_content_img.png" alt=""/>
+				</div>
+				<div class="search_tit fl cf">
+					<a href="#">제 4회 경기도 지사배겸<br/>전국 장애인 배드민턴 선수권 대회</a>
+				</div>
+				<div class="search_day fl cf">
+					<p>서수원칠보체육관</p>
+					<p><span>접수기간 &nbsp;</span> 2021.06.08 ~ 2021.06.09</p>
+					<p><span>대회기간 &nbsp;</span> 2021.06.25 ~ 2021.06.27</p>
+					<p><span class="like">♥ 2</span></p>
+				</div>				
+			</div><!-- id="search_content" -->
+			<div id="search_content">
+				<div class="search_img_small fl">
+					<img src="img/search_content_img.png" alt=""/>
+				</div>
+				<div class="search_tit fl cf">
+					<a href="#">제64회 여름철종별 배드민턴<br/>선수권대회(초등)</a>
+				</div>
+				<div class="search_day fl cf">
+					<p>안동대학교</p>
+					<p><span>접수기간 &nbsp;</span> 2021.05.25 ~ 2021.06.01</p>
+					<p><span>대회기간 &nbsp;</span> 2021.06.17 ~ 2021.06.27</p>
+					<p><span class="like">♥ 2</span></p>
+				</div>				
+			</div><!-- id="search_content" -->
+			<div id="search_content">
+				<div class="search_img_small fl">
+					<img src="img/search_content_img.png" alt=""/>
+				</div>
+				<div class="search_tit fl cf">
+					<a href="#">2021 전국가을철종배드민턴<br/>선수권대회(중고)</a>
+				</div>
+				<div class="search_day fl cf">
+					<p>청송국민체육센터</p>
+					<p><span>접수기간 &nbsp;</span> 2021.05.25 ~ 2021.06.01</p>
+					<p><span>대회기간 &nbsp;</span> 2021.06.17 ~ 2021.06.27</p>
+					<p><span class="like">♥ 2</span></p>
+				</div>				
+			</div><!-- id="search_content" -->			
+		</section>
+		<footer>
+			<div id="f_menu">
+				<ul class="cf">
+					<li><a href="../index.html">홈</a></li>
+					<li><a href="../index.html">예약</a></li>
+					<li class="on"><a href="../index.html">커뮤니티</a></li>
+					<li><a href="../index.html">내정보</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
