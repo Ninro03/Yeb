@@ -1,0 +1,48 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0; padding: 0; border: 0; font-family: 'Malgun Gothic', sans-serif;}
+
+ul, li{list-style: none;}
+a{text-decoration: none; display: block; color: #777777;}
+.cf:after{content: ''; display: block; clear: both;}
+.fl{float: left;}
+
+
+#wrap{width: 100%; margin: 0 auto;}
+#wrap_inner{width: 411px; height: 1500px; margin: 0 auto; background: #ff0000;}
+ header, section, footer{width: 100%;} 
+
+/* 로고 부분 */
+#header{width: 411px; margin: 0 auto; height: 80px;}
+#header h1{width: 180px;}
+#header img{width: 80px;  margin-top: 30px;}
+
+/* 헤더 바 */
+#h_bar{width: 411px; height: 64px; margin: 0 auto; border-bottom: 1px solid #ebebeb;}
+.left_arrow{width: 100px;}
+.left_arrow>a{display: block; width: 30px; margin-top: 24px;}
+#h_bar>h3{width: 200px; margin-left: 65px;margin-top: 22px; font-size: 20px;  letter-spacing: -1px; color: #3a3a3a;}
+button{font-size: 15px; margin-top: 29px; margin-left: 7px; cursor:pointer; background: #ffffff; border: none;  letter-spacing: -1px; color: #3a3a3a;}
+
+/* 로그인 부분 */
+#modify{width: 411px; margin: 0 auto;}
+#modify>h2{display: block; width: 100%; height: 160px; margin: 0 auto; float: left; }
+#modify>h2>img{display: block; width: 90px; margin: auto; padding-top: 50px;}
+.input_tit{width: 200px; float: left; letter-spacing: -1px; color: #3a3a3a; margin-left: 10px; font-size: 17px; margin-top: 15px;}
+#modify form>input{width: 100%; height: 42px; border-radius: 8px; margin-top: 6px; padding-left: 20px; box-sizing: border-box; border: 1px solid #ccc;}
+#modify form>input::placeholder{font-size: 15px; color: #c0c1c5;}
+.email{width: 250px; height: 20px; color: #969696; margin-top: 15px;margin-left: 11px;}
+
+/* 로그아웃 부분 */
+#logout_wrap{width: 411px; margin: 0 auto; }
+.logout{margin-top: 50px; width: 100%; height: 45px; border-top: 7px solid #f2f2f2; border-bottom: 7px solid #f2f2f2; text-align: center; text-decoration: underline; margin-top: 20px; font-size: 15px;}
+.logout a{display: block; margin-top: 10px;}
+.dropout{margin-top: 50px; width: 100%; height: 35px;  border-bottom: 7px solid #f2f2f2; text-align: center; text-decoration: underline; margin-top: 13px; font-size: 15px; color: #ff0000;}
+.dropout a{display: block; margin-top: 10px; color: #ff0000;}
+
+
+/* 하단 로그인 부분 */
+footer{width: 100%; height: 100px;}
+.f_login{width: 411px; margin: 60px auto;}
+.f_login a{margin-right: 80px; float: left;}
+.f_login a:nth-child(4){margin-right: 0px;}
+.f_login a img{width: 40px;}

@@ -4,13 +4,17 @@ create table members (
 	pass char(15) not null,
 	name char(10) not null,
 	gender char(2),
-	phon char(11),
-	year char(4),
-	month char(2),
-	day char(2), 
+	phone char(11),
+	birth char(8),
 	regist_day char(20),
 	primary key(num)
 );
+
+insert into members(id, pass, name, gender, phone, birth) value('yeb', 'ay2111!!', '관리자', '중성', '01010101010', '00010101');
+insert into members(id, pass, name, gender, phone, birth) value('reselldoge', 'ay2111!!', '리셀도지', '중성', '010000000', '00010101');
+insert into members(id, pass, name, gender, phone, birth) value('ajy6712', 'ay2111!!', '안진영', '남성', '01098821020', '19930303');
+insert into members(id, pass, name, gender, phone, birth) value('chlqjagml730', 'ay2111!!', '최범희', '여성', '01033085169', '19970228');
+insert into members(id, pass, name, gender, phone, birth) value('hayoung9835', 'ay2111!!', '남하영', '여성', '01090240295', '19980305');
 
 create table center (
 	num int not null auto_increment,
