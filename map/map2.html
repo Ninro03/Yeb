@@ -17,7 +17,7 @@
 	<div class="h_menu">
 		<div class="search_box">
 			<input type="text" class="search" id="search" placeholder="장소 주소 검색"/>
-			<button type="submit" class="search_icon"></button>
+			<button type="button" class="search_icon"></button>
 		</div>	 
 		<div class="time_box">
 			<button class="time_icon"></button>
@@ -197,13 +197,15 @@ var Marker3 = new naver.maps.Marker({
     }
 });
 
-var address = document.getElementById("search").value;
-$('.search_icon').click(function(){
-	$('.search').change(function(){
-		$('.search').val();
-		alert('.search');
+var address = new naver.maps.LatLng(37.3925, 126.92694);
+	$('#search').change(function(e){
+		e.preventDefault();
+		var x = $('.search').val();
+		if(x == "안양"){
+			map.setCenter(address);
+		};
 	});
-});
+
 
 </script>
 </body>

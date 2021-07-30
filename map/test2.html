@@ -1,33 +1,338 @@
-﻿<!DOCTYPE html> 
-<html> 
-  
-<body> 
-  
-  <h4> 
-      Change the text of the text field  
-      ,and then click the button. 
-  </h4> 
-  
- <input type="text" id="domTextElement1" > 
-  
-  <label for="domTextElement">Name: </label>
-  <input type="text" class="domTextElement2" > 
-  
-  <button type="button"  onclick="getValueInput()"> 
-      click me!! 
-  </button> 
-  
-  <p id="valueInput"></p> 
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7w1cs2xdu7&amp;submodules=panorama,geocoder,drawing,visualization"></script>	
+	<title>maps</title>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<link rel="stylesheet" href="css/map.css"/>
+	<link rel="stylesheet" href="css/test.css"/>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div id="maps"></div>
+<div id="map">
+	<div class="h_menu">
+		<div class="search_box">
+			<input type="text" class="search" id="address" placeholder="장소 주소 검색"/>
+			<button type="button" class="search_icon"></button>
+		</div>	 
+		<div class="time_box">
+			<button class="time_icon"></button>
+		</div>
+		<div class="filter_box">
+			<button class="filter_icon"></button>
+		</div>		
+	</div>
 
-  <script> 
+	<div class="f_box">
+		<button class="f_icon cf">
+			<div class="line_box">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+			<p>목록보기</p>		
+		</button>
+		<div class="list_contents">
+			<ul>
+				<li>
+					<a href="#">
+						<span class="title">호계다목적체육관</span>
+						<span class="star">
+							<img src="img/star.png" alt="star_icon"/>
+							4.1
+							<span class="color">(19)</span>
+						</span>
+ 						<span class="price">1인당￦1,500</span>
+						<span class="reserve">즉시예약</span>
+						<span class="thumb">
+							<img src="img/court1.png" alt="코트 썸네일"/>
+						</span>
+					<span class="content">평일 09:00~24:00 토요일 09:00~24:00 일요일 09:00~22:00</span>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="#">
+						<span class="title">군포시민체육관장제3체육관</span>
+						<span class="star">
+							<img src="img/star.png" alt="star_icon"/>
+							4.1
+							<span class="color">(19)</span>
+						</span>
+ 						<span class="price">1인당￦1,500</span>
+						<span class="reserve">즉시예약</span>
+						<span class="thumb">
+							<img src="img/court1.png" alt="코트 썸네일"/>
+						</span>
+					<span class="content">평일 06:00~22:00 주말 06:00~22:00 첫째/셋째 월요일 휴관</span>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="#">
+						<span class="title">청계 배드민턴장</span>
+						<span class="star">
+							<img src="img/star.png" alt="star_icon"/>
+							4.1
+							<span class="color">(19)</span>
+						</span>
+ 						<span class="price">1인당￦1,500</span>
+						<span class="reserve">즉시예약</span>
+						<span class="thumb">
+							<img src="img/court1.png" alt="코트 썸네일"/>
+						</span>
+					<span class="content">평일 09:00~24:00 토요일 09:00~24:00 일요일 09:00~22:00</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="f_box2">
+		<form action="#">
+			<fieldset class="field1">
+				<legend>실내 바닥 종류</legend>
+				<input type="checkbox" id="ch1"/><label for="ch1" class="ch1">마루</label>
+				<input type="checkbox" id="ch2"/><label for="ch2" class="ch2">합성PU</label>
+				<input type="checkbox" id="ch3"/><label for="ch3" class="ch3">우레탄</label>
+			</fieldset>
+			<div class="line"></div>
+			<fieldset class="field2">
+				<legend>편의시설</legend>
+				<input type="checkbox" id="ch4"/><label for="ch4" class="ch4">주차</label>
+				<input type="checkbox" id="ch5"/><label for="ch5">샤워실</label>
+				<input type="checkbox" id="ch6"/><label for="ch6">탈의실</label>
+				<input type="checkbox" id="ch7"/><label for="ch7">흡연장</label>
+			</fieldset>
+			<div class="line"></div>
+			<fieldset class="field3">
+				<legend>기타</legend>
+				<input type="checkbox" id="ch8"/><label for="ch8">거트</label>
+				<input type="checkbox" id="ch9"/><label for="ch9">레슨</label>
+				<input type="checkbox" id="ch10"/><label for="ch10" class="ch10">물품 대여</label>
+			</fieldset>
+			<input type="button" class="submit" value="적용하기"/>
+		</form>
+	</div>
+	
+	<div class="f_box3">
+		<form action="#">
+			<fieldset class="field1">
+				<legend>날짜를 선택하세요</legend>
 
-    const getValueInput = () =>{
-      let inputValue1 = document.querySelector("#domTextElement1").value; 
-      let inputValue2 = document.querySelector(".domTextElement2").value; 
-      document.querySelector("#valueInput").innerHTML = `First input value: ${inputValue1} Second Input Value: ${inputValue2}`; 
+			</fieldset>
+			<div class="line"></div>
+			<fieldset class="field2">
+				<legend>시간선택</legend>
+				<input type="checkbox" id="ch11"/><label for="ch11" class="ch11">10:00</label>
+				<input type="checkbox" id="ch12"/><label for="ch12">11:30</label>
+				<input type="checkbox" id="ch13"/><label for="ch13">13:00</label>
+				<input type="checkbox" id="ch14"/><label for="ch14">14:30</label>
+				<input type="checkbox" id="ch15"/><label for="ch15">16:00</label>
+			</fieldset>
+			<input type="button" class="submit" value="둘러보기"/>
+		</form>
+	</div>	
+</div>
+<script>
+var map = new naver.maps.Map("map", {
+    center: new naver.maps.LatLng(37.3595316, 127.1052133),
+    zoom: 15,
+    mapTypeControl: true
+});
+
+var infoWindow = new naver.maps.InfoWindow({
+    anchorSkew: true
+});
+
+map.setCursor('pointer');
+
+function searchCoordinateToAddress(latlng) {
+
+    infoWindow.close();
+
+    naver.maps.Service.reverseGeocode({
+        coords: latlng,
+        orders: [
+            naver.maps.Service.OrderType.ADDR,
+            naver.maps.Service.OrderType.ROAD_ADDR
+        ].join(',')
+    }, function(status, response) {
+        if (status === naver.maps.Service.Status.ERROR) {
+            return alert('Something Wrong!');
+        }
+
+        var items = response.v2.results,
+            address = '',
+            htmlAddresses = [];
+
+        for (var i=0, ii=items.length, item, addrType; i<ii; i++) {
+            item = items[i];
+            address = makeAddress(item) || '';
+            addrType = item.name === 'roadaddr' ? '[도로명 주소]' : '[지번 주소]';
+
+            htmlAddresses.push((i+1) +'. '+ addrType +' '+ address);
+        }
+
+        infoWindow.setContent([
+            '<div style="padding:10px;min-width:200px;line-height:150%;">',
+            '<h4 style="margin-top:5px;">검색 좌표</h4><br />',
+            htmlAddresses.join('<br />'),
+            '</div>'
+        ].join('\n'));
+
+        infoWindow.open(map, latlng);
+    });
+}
+
+function searchAddressToCoordinate(address) {
+    naver.maps.Service.geocode({
+        query: address
+    }, function(status, response) {
+        if (status === naver.maps.Service.Status.ERROR) {
+            return alert('Something Wrong!');
+        }
+
+        if (response.v2.meta.totalCount === 0) {
+            return alert('totalCount' + response.v2.meta.totalCount);
+        }
+
+        var htmlAddresses = [],
+            item = response.v2.addresses[0],
+            point = new naver.maps.Point(item.x, item.y);
+
+        if (item.roadAddress) {
+            htmlAddresses.push('[도로명 주소] ' + item.roadAddress);
+        }
+
+        if (item.jibunAddress) {
+            htmlAddresses.push('[지번 주소] ' + item.jibunAddress);
+        }
+
+        if (item.englishAddress) {
+            htmlAddresses.push('[영문명 주소] ' + item.englishAddress);
+        }
+
+        infoWindow.setContent([
+            '<div style="padding:10px;min-width:200px;line-height:150%;">',
+            '<h4 style="margin-top:5px;">검색 주소 : '+ address +'</h4><br />',
+            htmlAddresses.join('<br />'),
+            '</div>'
+        ].join('\n'));
+
+        map.setCenter(point);
+        infoWindow.open(map, point);
+    });
+}
+
+function initGeocoder() {
+    if (!map.isStyleMapReady) {
+        return;
     }
-    
-  </script> 
-</body> 
-  
-</html> 
+
+    map.addListener('click', function(e) {
+        searchCoordinateToAddress(e.coord);
+    });
+
+    $('#address').on('keydown', function(e) {
+        var keyCode = e.which;
+
+        if (keyCode === 13) { // Enter Key
+            searchAddressToCoordinate($('#address').val());
+        }
+    });
+
+    $('#submit').on('click', function(e) {
+        e.preventDefault();
+
+        searchAddressToCoordinate($('#address').val());
+    });
+
+    searchAddressToCoordinate('정자동 178-1');
+}
+
+function makeAddress(item) {
+    if (!item) {
+        return;
+    }
+
+    var name = item.name,
+        region = item.region,
+        land = item.land,
+        isRoadAddress = name === 'roadaddr';
+
+    var sido = '', sigugun = '', dongmyun = '', ri = '', rest = '';
+
+    if (hasArea(region.area1)) {
+        sido = region.area1.name;
+    }
+
+    if (hasArea(region.area2)) {
+        sigugun = region.area2.name;
+    }
+
+    if (hasArea(region.area3)) {
+        dongmyun = region.area3.name;
+    }
+
+    if (hasArea(region.area4)) {
+        ri = region.area4.name;
+    }
+
+    if (land) {
+        if (hasData(land.number1)) {
+            if (hasData(land.type) && land.type === '2') {
+                rest += '산';
+            }
+
+            rest += land.number1;
+
+            if (hasData(land.number2)) {
+                rest += ('-' + land.number2);
+            }
+        }
+
+        if (isRoadAddress === true) {
+            if (checkLastString(dongmyun, '면')) {
+                ri = land.name;
+            } else {
+                dongmyun = land.name;
+                ri = '';
+            }
+
+            if (hasAddition(land.addition0)) {
+                rest += ' ' + land.addition0.value;
+            }
+        }
+    }
+
+    return [sido, sigugun, dongmyun, ri, rest].join(' ');
+}
+
+function hasArea(area) {
+    return !!(area && area.name && area.name !== '');
+}
+
+function hasData(data) {
+    return !!(data && data !== '');
+}
+
+function checkLastString (word, lastString) {
+    return new RegExp(lastString + '$').test(word);
+}
+
+function hasAddition (addition) {
+    return !!(addition && addition.value);
+}
+
+naver.maps.onJSContentLoaded = initGeocoder;
+naver.maps.Event.once(map, 'init_stylemap', initGeocoder);
+</script>
+</body>
+</html>
