@@ -16,11 +16,13 @@ insert into members(id, pass, name, gender, phone, birth) value('ajy6712', 'ay21
 insert into members(id, pass, name, gender, phone, birth) value('chlqjagml730', 'ay2111!!', '최범희', '여성', '01033085169', '19970228');
 insert into members(id, pass, name, gender, phone, birth) value('hayoung9835', 'ay2111!!', '남하영', '여성', '01090240295', '19980305');
 
-create table center (
+create table center (				대관자
 	num int not null auto_increment,
 	area char(5) not null,
 	name char(15) not null,
+	address char(30) not null,
 	court char(2) not null,
+	price char(6) not null,
 	parking char(4),
 	light char(1),
 	floor char(4),
@@ -29,16 +31,39 @@ create table center (
 	smoking char(1)
 );
 
-create table reservation (
+insert into center(area, name, address, court, price, parking, light, floor, shower, fitting, smoking) value('서울', '용왕산 배드민턴장', '서울특별시 양천구 용왕정길 41', '4', '2000', '주차가능', '1', '마루', '1', '1', '2');
+insert into center(area, name, address, court, price, parking, light, floor, shower, fitting, smoking) value('서울', '송파 배드민턴장', '서울특별시 송파구 문정로 176', '8', '2500', '주차가능', '1', '마루', '1', '1', '2');
+insert into center(area, name, address, court, price, parking, light, floor, shower, fitting, smoking) value('서울', '반포종합운동장', '서울특별시 서초구 신반포로16길 30', '5', '1000', '주차가능', '1', '마루', '1', '1', '2');
+insert into center(area, name, address, court, price, parking, light, floor, shower, fitting, smoking) value('서울', '마포구민체육센터', '서울특별시 마포구 월드컵로25길', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+insert into center(area, name, address, court, price, parking, light, floor, shower, fitting, smoking) value('서울', '와우산 배드민턴장', '서울특별시 마포구 창전동 와우산로30길 87번', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+value('서울', '구로누리 배드민턴장', '서울 구로구 새말로18길 39', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+value('서울', '마곡실내배드민턴장', '서울특별시 강서구 가양1동 양천로 251', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+value('서울', '국사봉체육관', '서울 관악구 국회단지길 144 51', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+value('서울', '구립월곡배드민턴체육관', '서울 성북구 화랑로13길 144', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+
+value('경기인천', '수지배드민턴장', '경기도 용인시 수지구 신수로683번길 31', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+value('경기인천', '와동배드민턴장', '경기도 안산시 단원구 와동 95-3', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+value('경기인천', '백운배드민턴클럽', '경기도 의왕시 이동 434-4', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+value('경기인천', '기흥배드민턴장', '경기도 용인시 기흥구 신정로41번길 59', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+value('경기인천', '호계배드민턴장', '경기도 안양시 동안구 엘에스로144번길 86', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+value('경기인천', 에어배드민턴장', '경기 화성시 향남읍 토성로 130-32', '12', '1000', '주차가능', '1', '마루', '1', '1', '2');
+
+
+
+create table reservation (			예약자
 	num int not null auto_increment,
-	id char(15) not null,
-	s_center char(15) not null,
-	month char(2) not null,
-	date char(1) not null,
-	d_week char(1) not null,
-	time char(10) not null,
-	court_num char(2) not null,
-	regist_day char(20),
+	id char(15) not null,			예약자아이디
+	reserv_center char(15) not null,	예약체육관이름
+	month char(2) not null,		예약달
+	date char(1) not null,		예약일
+	d_week char(1) not null,		예약요일
+	time char(10) not null,		예약시간
+	court_num char(2) not null,		예약코트
+	gender char(4) not null,		참여 성별
+	person char(5) not null,		참여 인원
+	level char(3) not null,		참여 급수
+	regist_day char(20),			
 	primary key(num)  
 );
 
+insert into reservation(id, reserv_center, month, date, d_week, time, court_num, gender, person, level) value('hayoung9835', '용왕산 배드민턴장', '8', '14', '토', '14:00~16:00', '1', '남여모두', '4~8', 'A~D');
